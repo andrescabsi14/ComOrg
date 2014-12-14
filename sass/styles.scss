@@ -16,16 +16,17 @@ body
 header {
 	background: $color_primary;
 	height: 130px;
+	box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.5);
 }
 header ul {
 	list-style: none;
 }
 header ul li {
-	float: left;
+	float: right;
 }
 header ul li a {
 	color: $white;
-	font-size: em(11px);
+	font-size: em(10px);
 }
 
 header .top_header {
@@ -40,7 +41,7 @@ header .social_nav {
 //Layout
 .container
 {
-	width: 970px !important; //No responsive
+	width: 1024px !important; //No responsive
 }
 
 //Header
@@ -51,6 +52,7 @@ header .social_nav {
 	height: 20px;
 	float: left;
 	margin-left: 5px;
+	background-size: 42px;
 }
 .facebook_small a {
 	background: url($socialicons_small) no-repeat left center;
@@ -72,11 +74,26 @@ header .social_nav {
 	background-size: 100px;
 }
 .container_main_nav li {
-	margin-left: 2%;
+	margin: 0 -1px;
+	width: 90px;
 }
 .container_main_nav li a {
-	text-transform: uppercase;
+	text-decoration: none;
+}
+.container_main_nav li a:hover,
+.container_main_nav li a:active
+{
+	color: $white;
+}
+.container_main_nav li .container_nav_txt {
+	line-height: 30px;
+	text-align: center;
 	font-weight: bold;
+}
+.container_main_nav li .container_nav_txt span{
+	display: inline-block;
+  	vertical-align: middle;
+  	line-height: normal;
 }
 span.nav1,
 span.nav2,
@@ -88,28 +105,86 @@ span.nav7,
 span.nav8,
 {
 	width: 57px;
+	height: 57px;
+	border-radius: 50%;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 3px;
+	border: solid 2px $color_secondary;
+	transition: all 1s ease;
 }
-span.nav1 {
-	background: url($brand_logo) no-repeat left center;
+span.nav1
+{
+	background: url($main_nav1) no-repeat center $white;
 }
-span.nav1 {
-	
+span.nav2
+{
+	background: url($main_nav2) no-repeat center $white;
 }
-span.nav1 {
-	
+span.nav3
+{
+	background: url($main_nav3) no-repeat center $white;
 }
-span.nav1 {
-	
+span.nav4
+{
+	background: url($main_nav4) no-repeat center $white;
 }
-span.nav5 {
-	
+span.nav5
+{
+	background: url($main_nav5) no-repeat center $white;
 }
-span.nav6 {
-	
+span.nav6
+{
+	background: url($main_nav6) no-repeat center $white;
 }
-span.nav7 {
-	
+span.nav7
+{
+	background: url($main_nav7) no-repeat center $white;
 }
-span.nav8 {
-	
+span.nav8
+{
+	background: url($main_nav8) no-repeat center $white;
+}
+
+
+
+li:hover span.nav1,
+li.active span.nav1
+{
+	background: url($main_nav1_over) no-repeat center $white;
+}
+li:hover span.nav2,
+li.active span.nav2
+{
+	background: url($main_nav2_over) no-repeat center $white;
+}
+li:hover span.nav3,
+li.active span.nav3
+{
+	background: url($main_nav3_over) no-repeat center $white;
+}
+li:hover span.nav4,
+li.active span.nav4
+{
+	background: url($main_nav4_over) no-repeat center $white;
+}
+li:hover span.nav5,
+li.active span.nav5
+{
+	background: url($main_nav5_over) no-repeat center $white;
+}
+li:hover span.nav6,
+li.active span.nav6
+{
+	background: url($main_nav6_over) no-repeat center $white;
+}
+li:hover span.nav7,
+li.active span.nav7
+{
+	background: url($main_nav7_over) no-repeat center $white;
+}
+li:hover span.nav8,
+li.active span.nav8
+{
+	background: url($main_nav8_over) no-repeat center $white;
 }

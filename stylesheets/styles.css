@@ -8201,66 +8201,68 @@ body {
 header {
   background: #4EA635;
   height: 130px;
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.5);
 }
 
-/* line 20, ../sass/styles.scss */
+/* line 21, ../sass/styles.scss */
 header ul {
   list-style: none;
 }
 
-/* line 23, ../sass/styles.scss */
+/* line 24, ../sass/styles.scss */
 header ul li {
-  float: left;
+  float: right;
 }
 
-/* line 26, ../sass/styles.scss */
+/* line 27, ../sass/styles.scss */
 header ul li a {
   color: #fff;
-  font-size: 0.6875em;
+  font-size: 0.625em;
 }
 
-/* line 31, ../sass/styles.scss */
+/* line 32, ../sass/styles.scss */
 header .top_header {
   background: #499932;
   height: 23px;
 }
 
-/* line 41, ../sass/styles.scss */
+/* line 42, ../sass/styles.scss */
 .container {
-  width: 970px !important;
+  width: 1024px !important;
 }
 
-/* line 47, ../sass/styles.scss */
+/* line 48, ../sass/styles.scss */
 .social_nav li {
   float: left;
 }
 
-/* line 50, ../sass/styles.scss */
+/* line 51, ../sass/styles.scss */
 .social_nav li a {
   height: 20px;
   float: left;
   margin-left: 5px;
+  background-size: 42px;
 }
 
-/* line 55, ../sass/styles.scss */
+/* line 57, ../sass/styles.scss */
 .facebook_small a {
   background: url("/img/icons/social_sprite.png") no-repeat left center;
   width: 8px;
 }
 
-/* line 59, ../sass/styles.scss */
+/* line 61, ../sass/styles.scss */
 .twitter_small a {
   background: url("/img/icons/social_sprite.png") no-repeat -9px center;
   width: 16px;
 }
 
-/* line 63, ../sass/styles.scss */
+/* line 65, ../sass/styles.scss */
 .linkedin_small a {
   background: url("/img/icons/social_sprite.png") no-repeat center right;
   width: 16px;
 }
 
-/* line 67, ../sass/styles.scss */
+/* line 69, ../sass/styles.scss */
 .logo {
   background: url("/img/Logo_compulearning.png") no-repeat left center;
   width: 100px;
@@ -8269,18 +8271,38 @@ header .top_header {
   background-size: 100px;
 }
 
-/* line 74, ../sass/styles.scss */
+/* line 76, ../sass/styles.scss */
 .container_main_nav li {
-  margin-left: 2%;
+  margin: 0 -1px;
+  width: 90px;
 }
 
-/* line 77, ../sass/styles.scss */
+/* line 80, ../sass/styles.scss */
 .container_main_nav li a {
-  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* line 83, ../sass/styles.scss */
+.container_main_nav li a:hover,
+.container_main_nav li a:active {
+  color: #fff;
+}
+
+/* line 88, ../sass/styles.scss */
+.container_main_nav li .container_nav_txt {
+  line-height: 30px;
+  text-align: center;
   font-weight: bold;
 }
 
-/* line 81, ../sass/styles.scss */
+/* line 93, ../sass/styles.scss */
+.container_main_nav li .container_nav_txt span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+
+/* line 98, ../sass/styles.scss */
 span.nav1,
 span.nav2,
 span.nav3,
@@ -8290,9 +8312,99 @@ span.nav6,
 span.nav7,
 span.nav8 {
   width: 57px;
+  height: 57px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 3px;
+  border: solid 2px #499932;
+  transition: all 1s ease;
 }
 
-/* line 92, ../sass/styles.scss */
+/* line 116, ../sass/styles.scss */
 span.nav1 {
-  background: url("/img/Logo_compulearning.png") no-repeat left center;
+  background: url("/img/icons/nav1.png") no-repeat center #fff;
+}
+
+/* line 120, ../sass/styles.scss */
+span.nav2 {
+  background: url("/img/icons/nav2.png") no-repeat center #fff;
+}
+
+/* line 124, ../sass/styles.scss */
+span.nav3 {
+  background: url("/img/icons/nav3.png") no-repeat center #fff;
+}
+
+/* line 128, ../sass/styles.scss */
+span.nav4 {
+  background: url("/img/icons/nav4.png") no-repeat center #fff;
+}
+
+/* line 132, ../sass/styles.scss */
+span.nav5 {
+  background: url("/img/icons/nav5.png") no-repeat center #fff;
+}
+
+/* line 136, ../sass/styles.scss */
+span.nav6 {
+  background: url("/img/icons/nav6.png") no-repeat center #fff;
+}
+
+/* line 140, ../sass/styles.scss */
+span.nav7 {
+  background: url("/img/icons/nav7.png") no-repeat center #fff;
+}
+
+/* line 144, ../sass/styles.scss */
+span.nav8 {
+  background: url("/img/icons/nav8.png") no-repeat center #fff;
+}
+
+/* line 151, ../sass/styles.scss */
+li:hover span.nav1,
+li.active span.nav1 {
+  background: url("/img/icons/nav1_over.png") no-repeat center #fff;
+}
+
+/* line 156, ../sass/styles.scss */
+li:hover span.nav2,
+li.active span.nav2 {
+  background: url("/img/icons/nav2_over.png") no-repeat center #fff;
+}
+
+/* line 161, ../sass/styles.scss */
+li:hover span.nav3,
+li.active span.nav3 {
+  background: url("/img/icons/nav3_over.png") no-repeat center #fff;
+}
+
+/* line 166, ../sass/styles.scss */
+li:hover span.nav4,
+li.active span.nav4 {
+  background: url("/img/icons/nav4_over.png") no-repeat center #fff;
+}
+
+/* line 171, ../sass/styles.scss */
+li:hover span.nav5,
+li.active span.nav5 {
+  background: url("/img/icons/nav5_over.png") no-repeat center #fff;
+}
+
+/* line 176, ../sass/styles.scss */
+li:hover span.nav6,
+li.active span.nav6 {
+  background: url("/img/icons/nav6_over.png") no-repeat center #fff;
+}
+
+/* line 181, ../sass/styles.scss */
+li:hover span.nav7,
+li.active span.nav7 {
+  background: url("/img/icons/nav7_over.png") no-repeat center #fff;
+}
+
+/* line 186, ../sass/styles.scss */
+li:hover span.nav8,
+li.active span.nav8 {
+  background: url("/img/icons/nav8_over.png") no-repeat center #fff;
 }
