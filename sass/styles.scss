@@ -11,3 +11,25 @@ body
 {
 	font-size: $base__font-size;
 }
+
+//HEADER
+header {
+	background: $color_primary
+}
+header ul {
+	list-style: none;
+}
+header ul {
+	list-style: none;
+}
+header ul li {
+	float: left;
+}
+header ul li a {
+	color: $white;
+	font-size: $small_text;
+}
+
+header .top_header{
+	background: $color_secondary
+}

@@ -8180,6 +8180,11 @@ h2 {
   font-weight: 100;
 }
 
+/* line 30, ../sass/_base.scss */
+a {
+  text-decoration: none;
+}
+
 /* ==================================================================
 UTILITIES
 =====================================================================*/
@@ -8190,4 +8195,35 @@ UTILITIES
 /* line 10, ../sass/styles.scss */
 body {
   font-size: 16px;
+}
+
+/* line 16, ../sass/styles.scss */
+header {
+  background: #4EA635;
+}
+
+/* line 19, ../sass/styles.scss */
+header ul {
+  list-style: none;
+}
+
+/* line 22, ../sass/styles.scss */
+header ul {
+  list-style: none;
+}
+
+/* line 25, ../sass/styles.scss */
+header ul li {
+  float: left;
+}
+
+/* line 28, ../sass/styles.scss */
+header ul li a {
+  color: #fff;
+  font-size: 11px;
+}
+
+/* line 33, ../sass/styles.scss */
+header .top_header {
+  background: #499932;
 }
