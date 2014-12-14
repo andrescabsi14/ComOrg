@@ -9,15 +9,13 @@
 
 body
 {
-	font-size: $base__font-size;
+	font-size: $base_font-size;
 }
 
 //HEADER
 header {
-	background: $color_primary
-}
-header ul {
-	list-style: none;
+	background: $color_primary;
+	height: 130px;
 }
 header ul {
 	list-style: none;
@@ -27,9 +25,91 @@ header ul li {
 }
 header ul li a {
 	color: $white;
-	font-size: $small_text;
+	font-size: em(11px);
 }
 
-header .top_header{
-	background: $color_secondary
+header .top_header {
+	background: $color_secondary;
+	height: 23px;
+}
+header .social_nav {
+
+}
+
+
+//Layout
+.container
+{
+	width: 970px !important; //No responsive
+}
+
+//Header
+.social_nav li {
+	float: left;
+}
+.social_nav li a{
+	height: 20px;
+	float: left;
+	margin-left: 5px;
+}
+.facebook_small a {
+	background: url($socialicons_small) no-repeat left center;
+	width: 8px;
+}
+.twitter_small a {
+	background: url($socialicons_small) no-repeat -9px center;
+	width: 16px;
+}
+.linkedin_small a {
+	background: url($socialicons_small) no-repeat center right;
+	width: 16px;
+}
+.logo {
+	background: url($brand_logo) no-repeat left center;
+	width: 100px;
+	height: 107px;
+	display: inline-block;
+	background-size: 100px;
+}
+.container_main_nav li {
+	margin-left: 2%;
+}
+.container_main_nav li a {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+span.nav1,
+span.nav2,
+span.nav3,
+span.nav4,
+span.nav5,
+span.nav6,
+span.nav7,
+span.nav8,
+{
+	width: 57px;
+}
+span.nav1 {
+	background: url($brand_logo) no-repeat left center;
+}
+span.nav1 {
+	
+}
+span.nav1 {
+	
+}
+span.nav1 {
+	
+}
+span.nav5 {
+	
+}
+span.nav6 {
+	
+}
+span.nav7 {
+	
+}
+span.nav8 {
+	
 }

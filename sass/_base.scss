@@ -8,8 +8,8 @@ Base Styles
 }
 
 body {
-	font-size: $base__font-size;
-	line-height: ($base__line / $base__font-size);
+	font-size: $base_font-size;
+	line-height: ($base__line / $base_font-size);
 	font-family: $font-family--primary;
 }
 header {

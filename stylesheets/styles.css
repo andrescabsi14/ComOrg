@@ -8200,30 +8200,99 @@ body {
 /* line 16, ../sass/styles.scss */
 header {
   background: #4EA635;
+  height: 130px;
 }
 
-/* line 19, ../sass/styles.scss */
+/* line 20, ../sass/styles.scss */
 header ul {
   list-style: none;
 }
 
-/* line 22, ../sass/styles.scss */
-header ul {
-  list-style: none;
-}
-
-/* line 25, ../sass/styles.scss */
+/* line 23, ../sass/styles.scss */
 header ul li {
   float: left;
 }
 
-/* line 28, ../sass/styles.scss */
+/* line 26, ../sass/styles.scss */
 header ul li a {
   color: #fff;
-  font-size: 11px;
+  font-size: 0.6875em;
 }
 
-/* line 33, ../sass/styles.scss */
+/* line 31, ../sass/styles.scss */
 header .top_header {
   background: #499932;
+  height: 23px;
+}
+
+/* line 41, ../sass/styles.scss */
+.container {
+  width: 970px !important;
+}
+
+/* line 47, ../sass/styles.scss */
+.social_nav li {
+  float: left;
+}
+
+/* line 50, ../sass/styles.scss */
+.social_nav li a {
+  height: 20px;
+  float: left;
+  margin-left: 5px;
+}
+
+/* line 55, ../sass/styles.scss */
+.facebook_small a {
+  background: url("/img/icons/social_sprite.png") no-repeat left center;
+  width: 8px;
+}
+
+/* line 59, ../sass/styles.scss */
+.twitter_small a {
+  background: url("/img/icons/social_sprite.png") no-repeat -9px center;
+  width: 16px;
+}
+
+/* line 63, ../sass/styles.scss */
+.linkedin_small a {
+  background: url("/img/icons/social_sprite.png") no-repeat center right;
+  width: 16px;
+}
+
+/* line 67, ../sass/styles.scss */
+.logo {
+  background: url("/img/Logo_compulearning.png") no-repeat left center;
+  width: 100px;
+  height: 107px;
+  display: inline-block;
+  background-size: 100px;
+}
+
+/* line 74, ../sass/styles.scss */
+.container_main_nav li {
+  margin-left: 2%;
+}
+
+/* line 77, ../sass/styles.scss */
+.container_main_nav li a {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* line 81, ../sass/styles.scss */
+span.nav1,
+span.nav2,
+span.nav3,
+span.nav4,
+span.nav5,
+span.nav6,
+span.nav7,
+span.nav8 {
+  width: 57px;
+}
+
+/* line 92, ../sass/styles.scss */
+span.nav1 {
+  background: url("/img/Logo_compulearning.png") no-repeat left center;
 }

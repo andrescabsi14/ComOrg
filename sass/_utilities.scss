@@ -9,8 +9,10 @@ UTILITIES
 }
 */
 
-//Calculate rem values
+//Calculate em values
 
-
+@function em($px, $base: $base_font-size) {
+    @return ($px / $base) * 1em;
+}
 
 //Mixins
