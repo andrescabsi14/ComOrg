@@ -14,16 +14,16 @@ body {
 }
 header {
 	text-align: center;
-	padding: em(48px) 0; 
+	//padding: rem(48px) 0; 
 }
 h1 {
 	font-weight: $font-weight--light;
-	font-size em(42px);
+	//font-size rem(42px);
 	line-height: (46px / 42px);
-	margin-bottom: em(70px, 42px);
+	//margin-bottom: rem(70px, 42px);
 }
 h2 {
 	font-family: $font-family--secondary;
 	font-weight: $font-weight--thin;
-	font-size: em(24px);
+	//font-size: rem(24px);
 }
