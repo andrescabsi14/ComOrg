@@ -8168,33 +8168,316 @@ body {
   line-height: 1.5;
   font-family: Helvetica;
   height: 100%;
+  width: 100%;
 }
 
-/* line 20, ../sass/_base.scss */
+/* line 21, ../sass/_base.scss */
 header {
   text-align: center;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 100000;
+  width: 100%;
 }
 
-/* line 24, ../sass/_base.scss */
+/* line 29, ../sass/_base.scss */
 h1 {
   font-weight: 300;
   line-height: 1.0952380952;
 }
 
-/* line 30, ../sass/_base.scss */
+/* line 35, ../sass/_base.scss */
 h2 {
   font-family: "Arial", "Helvetica";
   font-weight: 100;
 }
 
-/* line 35, ../sass/_base.scss */
+/* line 40, ../sass/_base.scss */
 a {
   text-decoration: none;
 }
 
-/* line 38, ../sass/_base.scss */
+/* line 43, ../sass/_base.scss */
 a:hover {
   color: #064329;
+}
+
+/* line 46, ../sass/_base.scss */
+.main_content {
+  padding: 123px 0 120px 0;
+  float: left;
+  width: 100%;
+  z-index: 0;
+}
+
+/* ==================================================================
+Plugins
+=====================================================================*/
+/* ==================================================================
+OWL CAROUSEL
+=====================================================================*/
+/* line 62, ../sass/_base.scss */
+.owl-carousel .animated {
+  -webkit-animation-duration: 1000ms;
+  animation-duration: 1000ms;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/* line 68, ../sass/_base.scss */
+.owl-carousel .owl-animated-in {
+  z-index: 0;
+}
+
+/* line 71, ../sass/_base.scss */
+.owl-carousel .owl-animated-out {
+  z-index: 1;
+}
+
+/* line 74, ../sass/_base.scss */
+.owl-carousel .fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* 
+ * 	Owl Carousel - Auto Height Plugin
+ */
+/* line 101, ../sass/_base.scss */
+.owl-height {
+  -webkit-transition: height 500ms ease-in-out;
+  -moz-transition: height 500ms ease-in-out;
+  -ms-transition: height 500ms ease-in-out;
+  -o-transition: height 500ms ease-in-out;
+  transition: height 500ms ease-in-out;
+}
+
+/* 
+ *  Core Owl Carousel CSS File
+ */
+/* line 112, ../sass/_base.scss */
+.owl-carousel {
+  display: none;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  /* position relative and z-index fix webkit rendering fonts issue */
+  position: relative;
+  z-index: 1;
+}
+
+/* line 120, ../sass/_base.scss */
+.owl-carousel .owl-stage {
+  position: relative;
+  -ms-touch-action: pan-Y;
+}
+
+/* line 124, ../sass/_base.scss */
+.owl-carousel .owl-stage:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+/* line 132, ../sass/_base.scss */
+.owl-carousel .owl-stage-outer {
+  position: relative;
+  overflow: hidden;
+  /* fix for flashing background */
+  -webkit-transform: translate3d(0px, 0px, 0px);
+}
+
+/* line 138, ../sass/_base.scss */
+.owl-carousel .owl-controls .owl-nav .owl-prev,
+.owl-carousel .owl-controls .owl-nav .owl-next,
+.owl-carousel .owl-controls .owl-dot {
+  cursor: pointer;
+  cursor: hand;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 149, ../sass/_base.scss */
+.owl-carousel.owl-loaded {
+  display: block;
+}
+
+/* line 152, ../sass/_base.scss */
+.owl-carousel.owl-loading {
+  opacity: 0;
+  display: block;
+}
+
+/* line 156, ../sass/_base.scss */
+.owl-carousel.owl-hidden {
+  opacity: 0;
+}
+
+/* line 159, ../sass/_base.scss */
+.owl-carousel .owl-refresh .owl-item {
+  display: none;
+}
+
+/* line 162, ../sass/_base.scss */
+.owl-carousel .owl-item {
+  position: relative;
+  min-height: 1px;
+  float: left;
+  -webkit-backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 174, ../sass/_base.scss */
+.owl-carousel .owl-item img {
+  display: block;
+  width: 100%;
+  -webkit-transform-style: preserve-3d;
+}
+
+/* line 179, ../sass/_base.scss */
+.owl-carousel.owl-text-select-on .owl-item {
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto;
+}
+
+/* line 185, ../sass/_base.scss */
+.owl-carousel .owl-grab {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: -o-grab;
+  cursor: -ms-grab;
+  cursor: grab;
+}
+
+/* line 192, ../sass/_base.scss */
+.owl-carousel.owl-rtl {
+  direction: rtl;
+}
+
+/* line 195, ../sass/_base.scss */
+.owl-carousel.owl-rtl .owl-item {
+  float: right;
+}
+
+/* No Js */
+/* line 200, ../sass/_base.scss */
+.no-js .owl-carousel {
+  display: block;
+}
+
+/* 
+ * 	Owl Carousel - Lazy Load Plugin
+ */
+/* line 207, ../sass/_base.scss */
+.owl-carousel .owl-item .owl-lazy {
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease;
+  -moz-transition: opacity 400ms ease;
+  -ms-transition: opacity 400ms ease;
+  -o-transition: opacity 400ms ease;
+  transition: opacity 400ms ease;
+}
+
+/* line 215, ../sass/_base.scss */
+.owl-carousel .owl-item img {
+  transform-style: preserve-3d;
+}
+
+/* 
+ * 	Owl Carousel - Video Plugin
+ */
+/* line 222, ../sass/_base.scss */
+.owl-carousel .owl-video-wrapper {
+  position: relative;
+  height: 100%;
+  background: #000;
+}
+
+/* line 227, ../sass/_base.scss */
+.owl-carousel .owl-video-play-icon {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  left: 50%;
+  top: 50%;
+  margin-left: -40px;
+  margin-top: -40px;
+  background: url("owl.video.play.png") no-repeat;
+  cursor: pointer;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: scale 100ms ease;
+  -moz-transition: scale 100ms ease;
+  -ms-transition: scale 100ms ease;
+  -o-transition: scale 100ms ease;
+  transition: scale 100ms ease;
+}
+
+/* line 245, ../sass/_base.scss */
+.owl-carousel .owl-video-play-icon:hover {
+  -webkit-transition: scale(1.3, 1.3);
+  -moz-transition: scale(1.3, 1.3);
+  -ms-transition: scale(1.3, 1.3);
+  -o-transition: scale(1.3, 1.3);
+  transition: scale(1.3, 1.3);
+}
+
+/* line 252, ../sass/_base.scss */
+.owl-carousel .owl-video-playing .owl-video-tn,
+.owl-carousel .owl-video-playing .owl-video-play-icon {
+  display: none;
+}
+
+/* line 256, ../sass/_base.scss */
+.owl-carousel .owl-video-tn {
+  opacity: 0;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  -webkit-transition: opacity 400ms ease;
+  -moz-transition: opacity 400ms ease;
+  -ms-transition: opacity 400ms ease;
+  -o-transition: opacity 400ms ease;
+  transition: opacity 400ms ease;
+}
+
+/* line 271, ../sass/_base.scss */
+.owl-carousel .owl-video-frame {
+  position: relative;
+  z-index: 1;
 }
 
 /* ==================================================================
@@ -8216,40 +8499,41 @@ LAYOUT
 HEADER
 =====================================================================*/
 /* line 23, ../sass/styles.scss */
-header {
-  background: #4EA635;
-  height: 130px;
-  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.5);
-}
-
-/* line 28, ../sass/styles.scss */
 header ul {
   list-style: none;
 }
 
-/* line 31, ../sass/styles.scss */
+/* line 26, ../sass/styles.scss */
 header ul li {
   float: right;
 }
 
-/* line 34, ../sass/styles.scss */
+/* line 29, ../sass/styles.scss */
 header ul li a {
   color: #fff;
   font-size: 0.625em;
 }
 
-/* line 39, ../sass/styles.scss */
+/* line 33, ../sass/styles.scss */
 header .top_header {
   background: #499932;
   height: 23px;
 }
 
-/* line 46, ../sass/styles.scss */
-.social_nav li {
-  float: left;
+/* line 37, ../sass/styles.scss */
+header .main_header {
+  background: #4EA635;
+  box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.43);
+  margin-bottom: 10px;
+  height: 100px;
 }
 
-/* line 49, ../sass/styles.scss */
+/* line 43, ../sass/styles.scss */
+.social_nav li {
+  margin-left: 5px;
+}
+
+/* line 46, ../sass/styles.scss */
 .social_nav li a {
   height: 20px;
   float: left;
@@ -8257,25 +8541,25 @@ header .top_header {
   background-size: 42px;
 }
 
-/* line 55, ../sass/styles.scss */
+/* line 52, ../sass/styles.scss */
 .facebook_small a {
   background: url("/img/icons/social_sprite.png") no-repeat left center;
   width: 8px;
 }
 
-/* line 59, ../sass/styles.scss */
+/* line 56, ../sass/styles.scss */
 .twitter_small a {
   background: url("/img/icons/social_sprite.png") no-repeat -9px center;
   width: 16px;
 }
 
-/* line 63, ../sass/styles.scss */
+/* line 60, ../sass/styles.scss */
 .linkedin_small a {
   background: url("/img/icons/social_sprite.png") no-repeat center right;
   width: 16px;
 }
 
-/* line 67, ../sass/styles.scss */
+/* line 64, ../sass/styles.scss */
 .logo {
   background: url("/img/Logo_compulearning.png") no-repeat left center;
   width: 100px;
@@ -8284,38 +8568,38 @@ header .top_header {
   background-size: 100px;
 }
 
-/* line 74, ../sass/styles.scss */
+/* line 71, ../sass/styles.scss */
 .container_main_nav li {
   margin: 0 -1px;
   width: 90px;
 }
 
-/* line 78, ../sass/styles.scss */
+/* line 75, ../sass/styles.scss */
 .container_main_nav li a {
   text-decoration: none;
 }
 
-/* line 81, ../sass/styles.scss */
+/* line 78, ../sass/styles.scss */
 .container_main_nav li a:hover,
 .container_main_nav li a:active {
   color: #fff;
 }
 
-/* line 86, ../sass/styles.scss */
+/* line 83, ../sass/styles.scss */
 .container_main_nav li .container_nav_txt {
   line-height: 30px;
   text-align: center;
   font-weight: bold;
 }
 
-/* line 91, ../sass/styles.scss */
+/* line 88, ../sass/styles.scss */
 .container_main_nav li .container_nav_txt span {
   display: inline-block;
   vertical-align: middle;
   line-height: normal;
 }
 
-/* line 96, ../sass/styles.scss */
+/* line 93, ../sass/styles.scss */
 span.nav1,
 span.nav2,
 span.nav3,
@@ -8334,89 +8618,89 @@ span.nav8 {
   transition: all 0.5s ease;
 }
 
-/* line 114, ../sass/styles.scss */
+/* line 111, ../sass/styles.scss */
 span.nav1 {
   background: url("/img/icons/nav1.png") no-repeat center #fff;
 }
 
-/* line 118, ../sass/styles.scss */
+/* line 115, ../sass/styles.scss */
 span.nav2 {
   background: url("/img/icons/nav2.png") no-repeat center #fff;
 }
 
-/* line 122, ../sass/styles.scss */
+/* line 119, ../sass/styles.scss */
 span.nav3 {
   background: url("/img/icons/nav3.png") no-repeat center #fff;
 }
 
-/* line 126, ../sass/styles.scss */
+/* line 123, ../sass/styles.scss */
 span.nav4 {
   background: url("/img/icons/nav4.png") no-repeat center #fff;
 }
 
-/* line 130, ../sass/styles.scss */
+/* line 127, ../sass/styles.scss */
 span.nav5 {
   background: url("/img/icons/nav5.png") no-repeat center #fff;
 }
 
-/* line 134, ../sass/styles.scss */
+/* line 131, ../sass/styles.scss */
 span.nav6 {
   background: url("/img/icons/nav6.png") no-repeat center #fff;
 }
 
-/* line 138, ../sass/styles.scss */
+/* line 135, ../sass/styles.scss */
 span.nav7 {
   background: url("/img/icons/nav7.png") no-repeat center #fff;
 }
 
-/* line 142, ../sass/styles.scss */
+/* line 139, ../sass/styles.scss */
 span.nav8 {
   background: url("/img/icons/nav8.png") no-repeat center #fff;
 }
 
-/* line 146, ../sass/styles.scss */
+/* line 143, ../sass/styles.scss */
 li:hover span.nav1,
 li.active span.nav1 {
   background: url("/img/icons/nav1_over.png") no-repeat center #fff;
 }
 
-/* line 151, ../sass/styles.scss */
+/* line 148, ../sass/styles.scss */
 li:hover span.nav2,
 li.active span.nav2 {
   background: url("/img/icons/nav2_over.png") no-repeat center #fff;
 }
 
-/* line 156, ../sass/styles.scss */
+/* line 153, ../sass/styles.scss */
 li:hover span.nav3,
 li.active span.nav3 {
   background: url("/img/icons/nav3_over.png") no-repeat center #fff;
 }
 
-/* line 161, ../sass/styles.scss */
+/* line 158, ../sass/styles.scss */
 li:hover span.nav4,
 li.active span.nav4 {
   background: url("/img/icons/nav4_over.png") no-repeat center #fff;
 }
 
-/* line 166, ../sass/styles.scss */
+/* line 163, ../sass/styles.scss */
 li:hover span.nav5,
 li.active span.nav5 {
   background: url("/img/icons/nav5_over.png") no-repeat center #fff;
 }
 
-/* line 171, ../sass/styles.scss */
+/* line 168, ../sass/styles.scss */
 li:hover span.nav6,
 li.active span.nav6 {
   background: url("/img/icons/nav6_over.png") no-repeat center #fff;
 }
 
-/* line 176, ../sass/styles.scss */
+/* line 173, ../sass/styles.scss */
 li:hover span.nav7,
 li.active span.nav7 {
   background: url("/img/icons/nav7_over.png") no-repeat center #fff;
 }
 
-/* line 181, ../sass/styles.scss */
+/* line 178, ../sass/styles.scss */
 li:hover span.nav8,
 li.active span.nav8 {
   background: url("/img/icons/nav8_over.png") no-repeat center #fff;
@@ -8425,7 +8709,7 @@ li.active span.nav8 {
 /* ==================================================================
 FOOTER
 =====================================================================*/
-/* line 191, ../sass/styles.scss */
+/* line 188, ../sass/styles.scss */
 footer {
   box-shadow: 1px 1px 9px 2px rgba(0, 0, 0, 0.5);
   position: absolute;
@@ -8439,39 +8723,39 @@ footer {
   color: #fff;
 }
 
-/* line 203, ../sass/styles.scss */
+/* line 200, ../sass/styles.scss */
 footer .container {
   padding: 15px;
 }
 
-/* line 207, ../sass/styles.scss */
+/* line 204, ../sass/styles.scss */
 footer a {
   color: #fff;
   text-decoration: none;
 }
 
-/* line 211, ../sass/styles.scss */
+/* line 208, ../sass/styles.scss */
 footer ul {
   list-style: none;
 }
 
-/* line 215, ../sass/styles.scss */
+/* line 212, ../sass/styles.scss */
 footer ul li {
   font-size: 0.875em;
 }
 
-/* line 218, ../sass/styles.scss */
+/* line 215, ../sass/styles.scss */
 footer ul.container_info {
   height: 70px;
   padding-left: 0;
 }
 
-/* line 222, ../sass/styles.scss */
+/* line 219, ../sass/styles.scss */
 footer ul.container_bottom_nav {
   padding-left: 0;
 }
 
-/* line 226, ../sass/styles.scss */
+/* line 223, ../sass/styles.scss */
 footer ul.container_bottom_nav li {
   float: right;
   margin-left: 5px;
@@ -8479,17 +8763,36 @@ footer ul.container_bottom_nav li {
   font-size: 0.8125em;
 }
 
-/* line 233, ../sass/styles.scss */
+/* line 230, ../sass/styles.scss */
 footer ul.container_bottom_nav li a {
   text-decoration: none;
 }
 
-/* line 237, ../sass/styles.scss */
+/* line 234, ../sass/styles.scss */
 footer .container_credits {
   font-size: 0.6875em;
 }
 
-/* line 241, ../sass/styles.scss */
+/* line 238, ../sass/styles.scss */
 footer .container_credits a {
   text-decoration: none;
+}
+
+/* ==================================================================
+Index Styles
+=====================================================================*/
+/* line 249, ../sass/styles.scss */
+.container_slider {
+  width: 100%;
+  height: 530px;
+  background: url("/img/bg/green_squares.jpg") repeat left top;
+  color: #0b0b0b;
+}
+
+/* line 256, ../sass/styles.scss */
+.container_testimonials {
+  width: 100%;
+  height: 200px;
+  background: url("/img/bg/white_elegance.png") repeat left top;
+  color: #0b0b0b;
 }

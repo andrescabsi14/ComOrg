@@ -20,11 +20,6 @@ LAYOUT
 /* ==================================================================
 HEADER
 =====================================================================*/
-header {
-	background: $color_primary;
-	height: 130px;
-	box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.5);
-}
 header ul {
 	list-style: none;
 }
@@ -35,16 +30,18 @@ header ul li a {
 	color: $white;
 	font-size: em(10px);
 }
-
 header .top_header {
 	background: $color_secondary;
 	height: 23px;
 }
-header .social_nav {
-
+header .main_header {
+	background: $color_primary;
+	box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.43);
+	margin-bottom: 10px;
+	height: 100px;
 }
 .social_nav li {
-	float: left;
+	margin-left: 5px;
 }
 .social_nav li a{
 	height: 20px;
@@ -244,4 +241,23 @@ footer .container_credits a
 }
 
 
+
+/* ==================================================================
+Index Styles
+=====================================================================*/
+
+.container_slider
+{
+	width: 100%;
+	height: 530px;
+	background: url($green_squares) repeat left top;
+	color: $black;
+}
+.container_testimonials
+{
+	width: 100%;
+	height: 200px;
+	background: url($white_elegance) repeat left top;
+	color: $black;
+}
 
