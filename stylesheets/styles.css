@@ -8846,7 +8846,7 @@ Index Styles
   height: 50px;
   overflow: hidden;
   text-align: center;
-  margin-top: 90px;
+  margin-top: 40px;
 }
 
 /* line 285, ../sass/styles.scss */
@@ -8977,34 +8977,154 @@ Index Styles
   max-width: 330px;
 }
 
-/* line 407, ../sass/styles.scss */
+/* line 406, ../sass/styles.scss */
+.item {
+  padding-top: 10px;
+  margin: 0 25px;
+}
+
+/* line 411, ../sass/styles.scss */
 .item h2,
 .item p.price {
   font-size: 4.375em;
   font-family: bebas, sans-serif;
 }
 
-/* line 413, ../sass/styles.scss */
+/* line 417, ../sass/styles.scss */
 .item p.price {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
-/* line 417, ../sass/styles.scss */
+/* line 421, ../sass/styles.scss */
 .item h2 {
   border-bottom: solid 1px #dedede;
 }
 
-/* line 421, ../sass/styles.scss */
+/* line 425, ../sass/styles.scss */
 .item h2 span {
   font-size: 0.5em;
 }
 
-/* line 445, ../sass/styles.scss */
+/* line 429, ../sass/styles.scss */
+.item p.duracion_curso,
+.item p.video_curso {
+  margin-bottom: 5px;
+  position: relative;
+  padding-left: 30px;
+}
+
+/* line 436, ../sass/styles.scss */
+.item .duracion_curso .time_icon,
+.item .video_curso .video_icon {
+  position: absolute;
+  left: 0;
+  top: 1px;
+}
+
+/* line 444, ../sass/styles.scss */
+.item .duracion_curso.basico .time_icon {
+  background: url("/img/btn/clock_basico.png") no-repeat;
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+}
+
+/* line 451, ../sass/styles.scss */
+.item .video_curso.basico .video_icon {
+  background: url("/img/btn/video_basico.png") no-repeat;
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+}
+
+/* line 458, ../sass/styles.scss */
+.item h3.downloads_label {
+  color: #0b0b0b;
+  border-bottom: solid 1px #333;
+  width: 240px;
+  margin-bottom: 0;
+}
+
+/* line 465, ../sass/styles.scss */
+.item a.demo_video {
+  text-decoration: underline;
+  margin-left: 30px;
+}
+
+/* line 470, ../sass/styles.scss */
+.item a.downloads.basico {
+  color: #fff;
+  display: block;
+  width: 200px;
+  text-align: left;
+  margin-bottom: 10px;
+  border-radius: 9px;
+  padding: 9px 15px 9px 34px;
+  font-size: 0.875em;
+  line-height: 17px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 1s ease;
+  background: #4e76a5;
+  /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzRlNzZhNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwNTFkNDIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, #4e76a5 0%, #051d42 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4e76a5), color-stop(100%, #051d42));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #4e76a5 0%, #051d42 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #4e76a5 0%, #051d42 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #4e76a5 0%, #051d42 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #4e76a5 0%, #051d42 100%);
+  /* W3C */
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* line 495, ../sass/styles.scss */
+.item a.downloads.basico:hover {
+  background: #3a6ba3;
+  /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzNhNmJhMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMzFiM2YiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, #3a6ba3 0%, #031b3f 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3a6ba3), color-stop(100%, #031b3f));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #3a6ba3 0%, #031b3f 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #3a6ba3 0%, #031b3f 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #3a6ba3 0%, #031b3f 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #3a6ba3 0%, #031b3f 100%);
+  /* W3C */
+}
+
+/* line 507, ../sass/styles.scss */
+.item a.downloads {
+  position: relative;
+}
+
+/* line 511, ../sass/styles.scss */
+.item a.downloads span {
+  background: url("/img/btn/download.png") no-repeat 0px 0px;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 9px;
+  left: 11px;
+}
+
+/* line 520, ../sass/styles.scss */
 .item img.product_img {
   width: 206px;
 }
 
-/* line 449, ../sass/styles.scss */
+/* line 526, ../sass/styles.scss */
 .item a.buy_btn_link {
   width: 300px;
   height: 100px;
@@ -9013,7 +9133,7 @@ Index Styles
   text-align: center;
 }
 
-/* line 457, ../sass/styles.scss */
+/* line 534, ../sass/styles.scss */
 .item a.buy_btn_link .buy_btn {
   background: url("/img/btn/buynow.png") no-repeat -6px -1px;
   width: 150px;
