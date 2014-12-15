@@ -8150,19 +8150,26 @@ GLOBAL CONFIG
 /* ==================================================================
 Base Styles
 =====================================================================*/
-/* line 5, ../sass/_base.scss */
+@font-face {
+  font-family: 'bebas';
+  src: url("/fonts/bebasneue/bebasneue-webfont.eot");
+  src: url("/fonts/bebasneue/bebasneue-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/bebasneue/bebasneue-webfont.woff2") format("woff2"), url("/fonts/bebasneue/bebasneue-webfont.woff") format("woff"), url("/fonts/bebasneue/bebasneue-webfont.ttf") format("truetype"), url("/fonts/bebasneue/bebasneue-webfont.svg#bebas_neueregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 18, ../sass/_base.scss */
 * {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 9, ../sass/_base.scss */
+/* line 22, ../sass/_base.scss */
 html {
   position: relative;
   min-height: 100%;
 }
 
-/* line 14, ../sass/_base.scss */
+/* line 27, ../sass/_base.scss */
 body {
   font-size: 16px;
   line-height: 1.5;
@@ -8171,7 +8178,7 @@ body {
   width: 100%;
 }
 
-/* line 21, ../sass/_base.scss */
+/* line 34, ../sass/_base.scss */
 header {
   text-align: center;
   overflow: hidden;
@@ -8181,29 +8188,42 @@ header {
   width: 100%;
 }
 
-/* line 29, ../sass/_base.scss */
+/* line 42, ../sass/_base.scss */
+h1,
+h2,
+h3 {
+  font-family: bebas, sans-serif;
+}
+
+/* line 48, ../sass/_base.scss */
 h1 {
   font-weight: 300;
   line-height: 1.0952380952;
+  color: #064329;
 }
 
-/* line 35, ../sass/_base.scss */
+/* line 53, ../sass/_base.scss */
 h2 {
-  font-family: "Arial", "Helvetica";
   font-weight: 100;
+  color: #0b0b0b;
 }
 
-/* line 40, ../sass/_base.scss */
+/* line 57, ../sass/_base.scss */
+h3 {
+  color: #3c7f29;
+}
+
+/* line 60, ../sass/_base.scss */
 a {
   text-decoration: none;
 }
 
-/* line 43, ../sass/_base.scss */
+/* line 63, ../sass/_base.scss */
 a:hover {
   color: #064329;
 }
 
-/* line 46, ../sass/_base.scss */
+/* line 66, ../sass/_base.scss */
 .main_content {
   padding: 123px 0 120px 0;
   float: left;
@@ -8217,7 +8237,7 @@ Plugins
 /* ==================================================================
 OWL CAROUSEL
 =====================================================================*/
-/* line 62, ../sass/_base.scss */
+/* line 82, ../sass/_base.scss */
 .owl-carousel .animated {
   -webkit-animation-duration: 1000ms;
   animation-duration: 1000ms;
@@ -8225,17 +8245,17 @@ OWL CAROUSEL
   animation-fill-mode: both;
 }
 
-/* line 68, ../sass/_base.scss */
+/* line 88, ../sass/_base.scss */
 .owl-carousel .owl-animated-in {
   z-index: 0;
 }
 
-/* line 71, ../sass/_base.scss */
+/* line 91, ../sass/_base.scss */
 .owl-carousel .owl-animated-out {
   z-index: 1;
 }
 
-/* line 74, ../sass/_base.scss */
+/* line 94, ../sass/_base.scss */
 .owl-carousel .fadeOut {
   -webkit-animation-name: fadeOut;
   animation-name: fadeOut;
@@ -8260,7 +8280,7 @@ OWL CAROUSEL
 /* 
  * 	Owl Carousel - Auto Height Plugin
  */
-/* line 101, ../sass/_base.scss */
+/* line 121, ../sass/_base.scss */
 .owl-height {
   -webkit-transition: height 500ms ease-in-out;
   -moz-transition: height 500ms ease-in-out;
@@ -8272,7 +8292,7 @@ OWL CAROUSEL
 /* 
  *  Core Owl Carousel CSS File
  */
-/* line 112, ../sass/_base.scss */
+/* line 132, ../sass/_base.scss */
 .owl-carousel {
   display: none;
   width: 100%;
@@ -8282,13 +8302,13 @@ OWL CAROUSEL
   z-index: 1;
 }
 
-/* line 120, ../sass/_base.scss */
+/* line 140, ../sass/_base.scss */
 .owl-carousel .owl-stage {
   position: relative;
   -ms-touch-action: pan-Y;
 }
 
-/* line 124, ../sass/_base.scss */
+/* line 144, ../sass/_base.scss */
 .owl-carousel .owl-stage:after {
   content: ".";
   display: block;
@@ -8298,7 +8318,7 @@ OWL CAROUSEL
   height: 0;
 }
 
-/* line 132, ../sass/_base.scss */
+/* line 152, ../sass/_base.scss */
 .owl-carousel .owl-stage-outer {
   position: relative;
   overflow: hidden;
@@ -8306,7 +8326,7 @@ OWL CAROUSEL
   -webkit-transform: translate3d(0px, 0px, 0px);
 }
 
-/* line 138, ../sass/_base.scss */
+/* line 158, ../sass/_base.scss */
 .owl-carousel .owl-controls .owl-nav .owl-prev,
 .owl-carousel .owl-controls .owl-nav .owl-next,
 .owl-carousel .owl-controls .owl-dot {
@@ -8319,28 +8339,28 @@ OWL CAROUSEL
   user-select: none;
 }
 
-/* line 149, ../sass/_base.scss */
+/* line 169, ../sass/_base.scss */
 .owl-carousel.owl-loaded {
   display: block;
 }
 
-/* line 152, ../sass/_base.scss */
+/* line 172, ../sass/_base.scss */
 .owl-carousel.owl-loading {
   opacity: 0;
   display: block;
 }
 
-/* line 156, ../sass/_base.scss */
+/* line 176, ../sass/_base.scss */
 .owl-carousel.owl-hidden {
   opacity: 0;
 }
 
-/* line 159, ../sass/_base.scss */
+/* line 179, ../sass/_base.scss */
 .owl-carousel .owl-refresh .owl-item {
   display: none;
 }
 
-/* line 162, ../sass/_base.scss */
+/* line 182, ../sass/_base.scss */
 .owl-carousel .owl-item {
   position: relative;
   min-height: 1px;
@@ -8354,14 +8374,14 @@ OWL CAROUSEL
   user-select: none;
 }
 
-/* line 174, ../sass/_base.scss */
+/* line 194, ../sass/_base.scss */
 .owl-carousel .owl-item img {
   display: block;
   width: 100%;
   -webkit-transform-style: preserve-3d;
 }
 
-/* line 179, ../sass/_base.scss */
+/* line 199, ../sass/_base.scss */
 .owl-carousel.owl-text-select-on .owl-item {
   -webkit-user-select: auto;
   -moz-user-select: auto;
@@ -8369,7 +8389,7 @@ OWL CAROUSEL
   user-select: auto;
 }
 
-/* line 185, ../sass/_base.scss */
+/* line 205, ../sass/_base.scss */
 .owl-carousel .owl-grab {
   cursor: move;
   cursor: -webkit-grab;
@@ -8378,18 +8398,18 @@ OWL CAROUSEL
   cursor: grab;
 }
 
-/* line 192, ../sass/_base.scss */
+/* line 212, ../sass/_base.scss */
 .owl-carousel.owl-rtl {
   direction: rtl;
 }
 
-/* line 195, ../sass/_base.scss */
+/* line 215, ../sass/_base.scss */
 .owl-carousel.owl-rtl .owl-item {
   float: right;
 }
 
 /* No Js */
-/* line 200, ../sass/_base.scss */
+/* line 220, ../sass/_base.scss */
 .no-js .owl-carousel {
   display: block;
 }
@@ -8397,7 +8417,7 @@ OWL CAROUSEL
 /* 
  * 	Owl Carousel - Lazy Load Plugin
  */
-/* line 207, ../sass/_base.scss */
+/* line 227, ../sass/_base.scss */
 .owl-carousel .owl-item .owl-lazy {
   opacity: 0;
   -webkit-transition: opacity 400ms ease;
@@ -8407,7 +8427,7 @@ OWL CAROUSEL
   transition: opacity 400ms ease;
 }
 
-/* line 215, ../sass/_base.scss */
+/* line 235, ../sass/_base.scss */
 .owl-carousel .owl-item img {
   transform-style: preserve-3d;
 }
@@ -8415,14 +8435,14 @@ OWL CAROUSEL
 /* 
  * 	Owl Carousel - Video Plugin
  */
-/* line 222, ../sass/_base.scss */
+/* line 242, ../sass/_base.scss */
 .owl-carousel .owl-video-wrapper {
   position: relative;
   height: 100%;
   background: #000;
 }
 
-/* line 227, ../sass/_base.scss */
+/* line 247, ../sass/_base.scss */
 .owl-carousel .owl-video-play-icon {
   position: absolute;
   height: 80px;
@@ -8442,7 +8462,7 @@ OWL CAROUSEL
   transition: scale 100ms ease;
 }
 
-/* line 245, ../sass/_base.scss */
+/* line 265, ../sass/_base.scss */
 .owl-carousel .owl-video-play-icon:hover {
   -webkit-transition: scale(1.3, 1.3);
   -moz-transition: scale(1.3, 1.3);
@@ -8451,13 +8471,13 @@ OWL CAROUSEL
   transition: scale(1.3, 1.3);
 }
 
-/* line 252, ../sass/_base.scss */
+/* line 272, ../sass/_base.scss */
 .owl-carousel .owl-video-playing .owl-video-tn,
 .owl-carousel .owl-video-playing .owl-video-play-icon {
   display: none;
 }
 
-/* line 256, ../sass/_base.scss */
+/* line 276, ../sass/_base.scss */
 .owl-carousel .owl-video-tn {
   opacity: 0;
   height: 100%;
@@ -8474,7 +8494,7 @@ OWL CAROUSEL
   transition: opacity 400ms ease;
 }
 
-/* line 271, ../sass/_base.scss */
+/* line 291, ../sass/_base.scss */
 .owl-carousel .owl-video-frame {
   position: relative;
   z-index: 1;
@@ -8487,6 +8507,16 @@ UTILITIES
 	@import url($font-url--google);
 }
 */
+/* line 22, ../sass/_utilities.scss */
+.container_slider h1,
+.container_slider h3 {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 /* ==================================================================
 LAYOUT
 =====================================================================*/
@@ -8781,18 +8811,216 @@ footer .container_credits a {
 /* ==================================================================
 Index Styles
 =====================================================================*/
-/* line 249, ../sass/styles.scss */
+/* line 250, ../sass/styles.scss */
 .container_slider {
   width: 100%;
   height: 530px;
-  background: url("/img/bg/green_squares.jpg") repeat left top;
   color: #0b0b0b;
+  position: relative;
+  display: block;
 }
 
-/* line 256, ../sass/styles.scss */
+/* line 258, ../sass/styles.scss */
+.container_slider::after {
+  content: "";
+  background: url("/img/bg/green_squares.jpg") repeat left top;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+/* line 269, ../sass/styles.scss */
 .container_testimonials {
   width: 100%;
   height: 200px;
   background: url("/img/bg/white_elegance.png") repeat left top;
   color: #0b0b0b;
+}
+
+/* line 278, ../sass/styles.scss */
+#main_courses_slider .owl-controls .owl-dots {
+  height: 50px;
+  overflow: hidden;
+  text-align: center;
+  margin-top: 90px;
+}
+
+/* line 285, ../sass/styles.scss */
+#main_courses_slider .owl-controls .owl-dots .owl-dot {
+  width: 110px;
+  display: inline-block;
+  margin-right: 45px;
+}
+
+/* line 291, ../sass/styles.scss */
+#main_courses_slider .owl-controls .owl-dots .owl-dot span {
+  width: 100%;
+  height: 10px;
+  float: left;
+  background: #4EA635;
+}
+
+/* line 298, ../sass/styles.scss */
+#main_courses_slider .owl-controls .owl-dots .owl-dot p {
+  color: #4EA635;
+  height: 20px;
+  margin: 0;
+  font-size: 0.75em;
+  font-weight: bold;
+}
+
+/* line 306, ../sass/styles.scss */
+#main_courses_slider .owl-dots #slide1:hover span,
+#main_courses_slider .owl-dots #slide1.active span {
+  background: #0b0b0b;
+}
+
+/* line 311, ../sass/styles.scss */
+#main_courses_slider .owl-dots #slide2:hover span,
+#main_courses_slider .owl-dots #slide2.active span {
+  background: #7D1D23;
+}
+
+/* line 316, ../sass/styles.scss */
+#main_courses_slider .owl-dots #slide3:hover span,
+#main_courses_slider .owl-dots #slide3.active span {
+  background: #2E318A;
+}
+
+/* line 321, ../sass/styles.scss */
+#main_courses_slider .owl-dots #slide4:hover span,
+#main_courses_slider .owl-dots #slide4.active span {
+  background: #5E1A5F;
+}
+
+/* line 326, ../sass/styles.scss */
+#main_courses_slider .owl-dots #slide5:hover span,
+#main_courses_slider .owl-dots #slide5.active span {
+  background: #095827;
+}
+
+/* line 331, ../sass/styles.scss */
+#main_courses_slider .owl-dots #slide1:hover p,
+#main_courses_slider .owl-dots #slide1.active p {
+  color: #064329;
+}
+
+/* line 336, ../sass/styles.scss */
+#main_courses_slider .owl-dots #slide2:hover p,
+#main_courses_slider .owl-dots #slide2.active p {
+  color: #7D1D23;
+}
+
+/* line 341, ../sass/styles.scss */
+#main_courses_slider .owl-dots #slide3:hover p,
+#main_courses_slider .owl-dots #slide3.active p {
+  color: #2E318A;
+}
+
+/* line 346, ../sass/styles.scss */
+#main_courses_slider .owl-dots #slide4:hover p,
+#main_courses_slider .owl-dots #slide4.active p {
+  color: #5E1A5F;
+}
+
+/* line 351, ../sass/styles.scss */
+#main_courses_slider .owl-dots #slide5:hover p,
+#main_courses_slider .owl-dots #slide5.active p {
+  color: #095827;
+}
+
+/* line 361, ../sass/styles.scss */
+#main_courses_slider .owl-controls .owl-nav .owl-prev,
+#main_courses_slider .owl-controls .owl-nav .owl-next {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 240px;
+}
+
+/* line 369, ../sass/styles.scss */
+#main_courses_slider .owl-controls .owl-nav .owl-prev {
+  left: 10px;
+}
+
+/* line 373, ../sass/styles.scss */
+#main_courses_slider .owl-controls .owl-nav .owl-next {
+  right: 10px;
+}
+
+/* line 379, ../sass/styles.scss */
+.slider_content_wrapper {
+  height: 345px;
+  padding: 0 0 0 50px;
+}
+
+/* line 389, ../sass/styles.scss */
+.container_slider h1 {
+  font-size: 4.375em;
+  line-height: 1;
+  font-weight: 600;
+  margin-top: 70px;
+}
+
+/* line 396, ../sass/styles.scss */
+.container_slider h3 {
+  top: 28%;
+}
+
+/* line 400, ../sass/styles.scss */
+.container_slider img {
+  padding: 20px 0 0px 0px;
+  max-width: 330px;
+}
+
+/* line 407, ../sass/styles.scss */
+.item h2,
+.item p.price {
+  font-size: 4.375em;
+  font-family: bebas, sans-serif;
+}
+
+/* line 413, ../sass/styles.scss */
+.item p.price {
+  margin-top: 20px;
+}
+
+/* line 417, ../sass/styles.scss */
+.item h2 {
+  border-bottom: solid 1px #dedede;
+}
+
+/* line 421, ../sass/styles.scss */
+.item h2 span {
+  font-size: 0.5em;
+}
+
+/* line 445, ../sass/styles.scss */
+.item img.product_img {
+  width: 206px;
+}
+
+/* line 449, ../sass/styles.scss */
+.item a.buy_btn_link {
+  width: 300px;
+  height: 100px;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* line 457, ../sass/styles.scss */
+.item a.buy_btn_link .buy_btn {
+  background: url("/img/btn/buynow.png") no-repeat -6px -1px;
+  width: 150px;
+  height: 90px;
+  padding: 20px;
+  color: #65510F;
+  font-weight: bold;
+  font-size: 0.875em;
+  margin-right: 37px;
 }

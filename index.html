@@ -98,74 +98,92 @@
 
 	<section class="main_content">
 		<article class="container_slider col-xs-12">
+			<div class="container">
+				<!-- Slider -->
+				<div id="main_courses_slider">
+					<div class="item" data-hash="8324">
+						<div class="descriptive_txt col-xs-7">
+							<div class="slider_content_wrapper">
+								<h1>Cursos Virtuales Multimedia</h1>
+								<h3>12 Video-Lecciones con Actividades Prácticas</h3>
+							</div>
+						</div>
+						<div class="descriptive_img col-xs-5">
+							<img src="/img/cursos/package.png" alt="">
+						</div>
+					</div>
+					<div class="item" data-hash="8563">
+					  <h2 class="col-xs-12">EXCEL BÁSICO <span>Tips y trucos …</span></h2>
+					  <div class="col-xs-6">
+					  	<p class="price">USD $29</p>
+					  	<p><span class="time_icon"></span><strong>Duración:</strong> 12 a 18 horas</p>
+					  	<p><span class="video_icon"></span>Más de 2 horas de Video en alta resolución.</p>
+					  	<a href="">Ver Video Demo </a>
 
-			<!-- Slider -->
-			<div class="owl-carousel">
-				<div class="item" data-hash="zero">
-				  <h4>0</h4>
-				</div>
-				<div class="item" data-hash="one">
-				  <h4>1</h4>
-				</div>
-				<div class="item" data-hash="two">
-				  <h4>2</h4>
-				</div>
-				<div class="item" data-hash="three">
-				  <h4>3</h4>
-				</div>
-				<div class="item" data-hash="four">
-				  <h4>4</h4>
-				</div>
-				<div class="item" data-hash="five">
-				  <h4>5</h4>
-				</div>
-				<div class="item" data-hash="six">
-				  <h4>6</h4>
-				</div>
-				<div class="item" data-hash="seven">
-				  <h4>7</h4>
-				</div>
-				<div class="item" data-hash="eight">
-				  <h4>8</h4>
-				</div>
-				<div class="item" data-hash="nine">
-				  <h4>9</h4>
-				</div>
-				<div class="item" data-hash="ten">
-				  <h4>10</h4>
-				</div>
-				<div class="item" data-hash="eleven">
-				  <h4>11</h4>
-				</div>
-				<div class="item" data-hash="tweleve">
-				  <h4>12</h4>
-				</div>
-				<div class="item" data-hash="thirteen">
-				  <h4>13</h4>
-				</div>
-				<div class="item" data-hash="fourteen">
-				  <h4>14</h4>
-				</div>
-				<div class="item" data-hash="fifteen">
-				  <h4>15</h4>
-				</div>
-	        </div>
-			<hr>
-			<a class="button secondary url" href="#zero">zero</a> 
-			<a class="button secondary url" href="#three">three</a> 
-			<a class="button secondary url" href="#five">five</a> 
-			<a class="button secondary url" href="#seven">seven</a> 
-			<a class="button secondary url" href="#ten">ten</a>
-
-
-
-
-
-
-
+					  	<h3>Descargas sin restricciones</h3>
+					  	<a class="downloads" href=""><span class="icon_download"></span>Temario Detallado</a>
+					  	<a class="downloads" href=""><span class="icon_download"></span>Curso Demostración</a>
+					  	<a class="downloads" href=""><span class="icon_download"></span>Archivos de Trabajo</a>
+					  </div>
+					  <div class="col-xs-6">
+					  	<img class="product_img pull-right" src="/img/cursos/basico.png" alt="">
+					  	<a class="buy_btn_link pull-right" href=""><div class="buy_btn pull-right">Comprar Curso</div></a>
+					  </div>
+					</div>
+					<div class="item" data-hash="8620">
+					  <h2 class="col-xs-12">Curso graficas</h2>
+					</div>
+					<div class="item" data-hash="8031">
+					  <h2 class="col-xs-12">Curso tablas dinámicas</h2>
+					</div>
+					<div class="item" data-hash="8994">
+					  <h2 class="col-xs-12">Curso Macros</h2>
+					</div>
+		        </div><!--End slider-->
+			</div><!--End container-->
 		</article>
 		<article class="container_testimonials col-xs-12">
-			<!-- Testimonial Slider-->
+			<div class="container">
+				<!-- Testimonial Slider-->
+				<div id="testimonials_slider">
+					<div class="item">
+						<h4>1</h4>
+					</div>
+					<div class="item">
+						<h4>2</h4>
+					</div>
+					<div class="item">
+						<h4>3</h4>
+					</div>
+					<div class="item">
+						<h4>4</h4>
+					</div>
+					<div class="item">
+						<h4>5</h4>
+					</div>
+					<div class="item">
+						<h4>6</h4>
+					</div>
+					<div class="item">
+						<h4>7</h4>
+					</div>
+					<div class="item">
+						<h4>8</h4>
+					</div>
+					<div class="item">
+						<h4>9</h4>
+					</div>
+					<div class="item">
+						<h4>10</h4>
+					</div>
+					<div class="item">
+						<h4>11</h4>
+					</div>
+					<div class="item">
+						<h4>12</h4>
+					</div>
+				</div><!--End slider-->
+			</div><!--End container-->
 		</article>
 	</section>
 
@@ -193,18 +211,6 @@
 	</footer>
 	<script src="/js/jquery-2.1.1.min.js"></script>
 	<script src="/js/owl.carousel.min.js"></script>
-	<script>
-		$(document).ready(function(){
-		  	$('.owl-carousel').owlCarousel({
-		        items:1,
-		        loop:false,
-		        center:true,
-		        margin:10,
-		        URLhashListener:true,
-		        autoplayHoverPause:true,
-		        startPosition: 'URLHash'
-		    });
-		});
-	</script>
+	<script src="/js/index.js"></script>
 </body>
 </html>

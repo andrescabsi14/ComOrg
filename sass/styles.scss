@@ -246,12 +246,25 @@ footer .container_credits a
 Index Styles
 =====================================================================*/
 
+
 .container_slider
 {
 	width: 100%;
 	height: 530px;
-	background: url($green_squares) repeat left top;
 	color: $black;
+	position: relative;
+	display: block;
+}
+.container_slider::after {
+	content: "";
+	background: url($green_squares) repeat left top;
+	opacity: 0.5;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;   
 }
 .container_testimonials
 {
@@ -261,3 +274,194 @@ Index Styles
 	color: $black;
 }
 
+//Slider Controls
+#main_courses_slider .owl-controls .owl-dots
+{
+	height: 50px;
+	overflow: hidden;
+	text-align: center;
+	margin-top: 90px;
+}
+#main_courses_slider .owl-controls .owl-dots .owl-dot
+{
+	width: 110px;
+	display: inline-block;
+	margin-right: 45px;
+}
+#main_courses_slider .owl-controls .owl-dots .owl-dot span
+{
+	width: 100%;
+	height: 10px;
+	float: left;
+	background: $color_primary;
+}
+#main_courses_slider .owl-controls .owl-dots .owl-dot p
+{
+	color: $color_primary;
+	height: 20px;
+	margin: 0;
+	font-size: em(12px);
+	font-weight: bold;
+}
+#main_courses_slider .owl-dots  #slide1:hover span,
+#main_courses_slider .owl-dots  #slide1.active span,
+{
+	background: $black;
+}
+#main_courses_slider .owl-dots  #slide2:hover span,
+#main_courses_slider .owl-dots  #slide2.active span,
+{
+	background: $product_basico;
+}
+#main_courses_slider .owl-dots  #slide3:hover span,
+#main_courses_slider .owl-dots  #slide3.active span,
+{
+	background: $product_graficas;
+}
+#main_courses_slider .owl-dots  #slide4:hover span,
+#main_courses_slider .owl-dots  #slide4.active span,
+{
+	background: $product_tablas;
+}
+#main_courses_slider .owl-dots  #slide5:hover span,
+#main_courses_slider .owl-dots  #slide5.active span,
+{
+	background: $product_macros;
+}
+#main_courses_slider .owl-dots  #slide1:hover p,
+#main_courses_slider .owl-dots  #slide1.active p
+{
+	color: $color_accent;
+}
+#main_courses_slider .owl-dots  #slide2:hover p,
+#main_courses_slider .owl-dots  #slide2.active p
+{
+	color: $product_basico;
+}
+#main_courses_slider .owl-dots  #slide3:hover p,
+#main_courses_slider .owl-dots  #slide3.active p
+{
+	color: $product_graficas;
+}
+#main_courses_slider .owl-dots  #slide4:hover p,
+#main_courses_slider .owl-dots  #slide4.active p
+{
+	color: $product_tablas;
+}
+#main_courses_slider .owl-dots  #slide5:hover p,
+#main_courses_slider .owl-dots  #slide5.active p
+{
+	color: $product_macros;
+}
+
+#main_courses_slider .owl-controls .owl-nav
+{
+	
+}
+#main_courses_slider .owl-controls .owl-nav .owl-prev,
+#main_courses_slider .owl-controls .owl-nav .owl-next
+{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 240px;
+}
+#main_courses_slider .owl-controls .owl-nav .owl-prev
+{
+	left: 10px;
+}
+#main_courses_slider .owl-controls .owl-nav .owl-next
+{
+	right: 10px;	
+}
+
+//TAB 1
+.slider_content_wrapper
+{
+	height: 345px;
+	padding: 0 0 0 50px;
+}
+.container_slider h1,
+.container_slider h3
+{
+	@extend %vertical-align;
+}
+.container_slider h1
+{
+	font-size: em(70px);
+	line-height: 1;
+	font-weight: 600;
+	margin-top: 70px;
+}
+.container_slider h3
+{
+	top: 28%;
+}
+.container_slider img
+{
+	padding: 20px 0 0px 0px;
+	max-width: 330px;
+}
+//TAB 2 - 5
+
+.item h2,
+.item p.price
+{
+	font-size: em(70px);
+	font-family: bebas, sans-serif;
+}
+.item p.price
+{
+	margin-top: 20px;
+}
+.item h2
+{
+	border-bottom: solid 1px #dedede;
+}
+.item h2 span
+{
+	font-size: em(8px);
+}
+.item p
+{
+
+}
+.item p span
+{
+	
+}
+.item h3
+{
+	
+}
+.item a.downloads
+{
+	
+}
+.item a.downloads span
+{
+	
+}
+.item img.product_img
+{
+	width: 206px;
+}
+.item a.buy_btn_link
+{
+	width: 300px;
+	height: 100px;
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+}
+.item a.buy_btn_link .buy_btn
+{
+	background: url("/img/btn/buynow.png") no-repeat -6px -1px;
+	width: 150px;
+	height: 90px;
+	padding: 20px;
+	color: $buy_now_color;
+	font-weight: bold;
+	font-size: em(14px);
+	margin-right: 37px;
+}
