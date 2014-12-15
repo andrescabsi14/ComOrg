@@ -6,11 +6,16 @@ Base Styles
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
-
+html
+{
+  position: relative;
+  min-height: 100%;
+}
 body {
 	font-size: $base_font-size;
 	line-height: ($base__line / $base_font-size);
 	font-family: $font-family--primary;
+	height: 100%;
 }
 header {
 	text-align: center;
@@ -29,4 +34,7 @@ h2 {
 }
 a {
 	text-decoration: none;
+}
+a:hover {
+	color: $color_accent;
 }
