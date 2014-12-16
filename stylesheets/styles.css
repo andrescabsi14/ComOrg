@@ -370,8 +370,8 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?1418527353);
-  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?&1418527353#iefix) format("embedded-opentype"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff?1418527353) format("woff"), url(/fonts/bootstrap/glyphicons-halflings-regular.ttf?1418527353) format("truetype"), url(/fonts/bootstrap/glyphicons-halflings-regular.svg?1418527353#glyphicons_halflingsregular) format("svg");
+  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?1418758865);
+  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?&1418758865#iefix) format("embedded-opentype"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff?1418758865) format("woff"), url(/fonts/bootstrap/glyphicons-halflings-regular.ttf?1418758865) format("truetype"), url(/fonts/bootstrap/glyphicons-halflings-regular.svg?1418758865#glyphicons_halflingsregular) format("svg");
 }
 /* line 21, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.3.1.0/assets/stylesheets/bootstrap/_glyphicons.scss */
 .glyphicon {
@@ -8152,8 +8152,8 @@ Base Styles
 =====================================================================*/
 @font-face {
   font-family: 'bebas';
-  src: url("/fonts/bebasneue/bebasneue-webfont.eot");
-  src: url("/fonts/bebasneue/bebasneue-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/bebasneue/bebasneue-webfont.woff2") format("woff2"), url("/fonts/bebasneue/bebasneue-webfont.woff") format("woff"), url("/fonts/bebasneue/bebasneue-webfont.ttf") format("truetype"), url("/fonts/bebasneue/bebasneue-webfont.svg#bebas_neueregular") format("svg");
+  src: url("fonts/bebasneue/bebasneue-webfont.eot");
+  src: url("fonts/bebasneue/bebasneue-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/bebasneue/bebasneue-webfont.woff2") format("woff2"), url("fonts/bebasneue/bebasneue-webfont.woff") format("woff"), url("fonts/bebasneue/bebasneue-webfont.ttf") format("truetype"), url("fonts/bebasneue/bebasneue-webfont.svg#bebas_neueregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -8176,7 +8176,7 @@ body {
   font-family: Helvetica;
   height: 100%;
   width: 100%;
-  background: url("/img/bg/white_elegance.png") repeat left top;
+  background: url("img/bg/white_elegance.png") repeat left top;
 }
 
 /* line 35, ../sass/_base.scss */
@@ -8348,25 +8348,25 @@ header .main_header {
 
 /* line 52, ../sass/styles.scss */
 .facebook_small a {
-  background: url("/img/icons/social_sprite.png") no-repeat left center;
+  background: url("img/icons/social_sprite.png") no-repeat left center;
   width: 8px;
 }
 
 /* line 56, ../sass/styles.scss */
 .twitter_small a {
-  background: url("/img/icons/social_sprite.png") no-repeat -9px center;
+  background: url("img/icons/social_sprite.png") no-repeat -9px center;
   width: 16px;
 }
 
 /* line 60, ../sass/styles.scss */
 .linkedin_small a {
-  background: url("/img/icons/social_sprite.png") no-repeat center right;
+  background: url("img/icons/social_sprite.png") no-repeat center right;
   width: 16px;
 }
 
 /* line 64, ../sass/styles.scss */
 .logo {
-  background: url("/img/Logo_compulearning.png") no-repeat left center;
+  background: url("img/Logo_compulearning.png") no-repeat left center;
   width: 100px;
   height: 107px;
   display: inline-block;
@@ -8425,90 +8425,90 @@ span.nav8 {
 
 /* line 111, ../sass/styles.scss */
 span.nav1 {
-  background: url("/img/icons/nav1.png") no-repeat center #fff;
+  background: url("img/icons/nav1.png") no-repeat center #fff;
 }
 
 /* line 115, ../sass/styles.scss */
 span.nav2 {
-  background: url("/img/icons/nav2.png") no-repeat center #fff;
+  background: url("img/icons/nav2.png") no-repeat center #fff;
 }
 
 /* line 119, ../sass/styles.scss */
 span.nav3 {
-  background: url("/img/icons/nav3.png") no-repeat center #fff;
+  background: url("img/icons/nav3.png") no-repeat center #fff;
 }
 
 /* line 123, ../sass/styles.scss */
 span.nav4 {
-  background: url("/img/icons/nav4.png") no-repeat center #fff;
+  background: url("img/icons/nav4.png") no-repeat center #fff;
 }
 
 /* line 127, ../sass/styles.scss */
 span.nav5 {
-  background: url("/img/icons/nav5.png") no-repeat center #fff;
+  background: url("img/icons/nav5.png") no-repeat center #fff;
 }
 
 /* line 131, ../sass/styles.scss */
 span.nav6 {
-  background: url("/img/icons/nav6.png") no-repeat center #fff;
+  background: url("img/icons/nav6.png") no-repeat center #fff;
 }
 
 /* line 135, ../sass/styles.scss */
 span.nav7 {
-  background: url("/img/icons/nav7.png") no-repeat center #fff;
+  background: url("img/icons/nav7.png") no-repeat center #fff;
 }
 
 /* line 139, ../sass/styles.scss */
 span.nav8 {
-  background: url("/img/icons/nav8.png") no-repeat center #fff;
+  background: url("img/icons/nav8.png") no-repeat center #fff;
 }
 
 /* line 143, ../sass/styles.scss */
 li:hover span.nav1,
 li.active span.nav1 {
-  background: url("/img/icons/nav1_over.png") no-repeat center #fff;
+  background: url("img/icons/nav1_over.png") no-repeat center #fff;
 }
 
 /* line 148, ../sass/styles.scss */
 li:hover span.nav2,
 li.active span.nav2 {
-  background: url("/img/icons/nav2_over.png") no-repeat center #fff;
+  background: url("img/icons/nav2_over.png") no-repeat center #fff;
 }
 
 /* line 153, ../sass/styles.scss */
 li:hover span.nav3,
 li.active span.nav3 {
-  background: url("/img/icons/nav3_over.png") no-repeat center #fff;
+  background: url("img/icons/nav3_over.png") no-repeat center #fff;
 }
 
 /* line 158, ../sass/styles.scss */
 li:hover span.nav4,
 li.active span.nav4 {
-  background: url("/img/icons/nav4_over.png") no-repeat center #fff;
+  background: url("img/icons/nav4_over.png") no-repeat center #fff;
 }
 
 /* line 163, ../sass/styles.scss */
 li:hover span.nav5,
 li.active span.nav5 {
-  background: url("/img/icons/nav5_over.png") no-repeat center #fff;
+  background: url("img/icons/nav5_over.png") no-repeat center #fff;
 }
 
 /* line 168, ../sass/styles.scss */
 li:hover span.nav6,
 li.active span.nav6 {
-  background: url("/img/icons/nav6_over.png") no-repeat center #fff;
+  background: url("img/icons/nav6_over.png") no-repeat center #fff;
 }
 
 /* line 173, ../sass/styles.scss */
 li:hover span.nav7,
 li.active span.nav7 {
-  background: url("/img/icons/nav7_over.png") no-repeat center #fff;
+  background: url("img/icons/nav7_over.png") no-repeat center #fff;
 }
 
 /* line 178, ../sass/styles.scss */
 li:hover span.nav8,
 li.active span.nav8 {
-  background: url("/img/icons/nav8_over.png") no-repeat center #fff;
+  background: url("img/icons/nav8_over.png") no-repeat center #fff;
 }
 
 /* ==================================================================
@@ -8598,7 +8598,7 @@ Index Styles
 /* line 258, ../sass/styles.scss */
 .container_slider::after {
   content: "";
-  background: url("/img/bg/green_squares.jpg") repeat left top;
+  background: url("img/bg/green_squares.jpg") repeat left top;
   opacity: 0.5;
   top: 0;
   left: 0;
@@ -8808,7 +8808,7 @@ Index Styles
 
 /* line 456, ../sass/styles.scss */
 .item .duracion_curso.basico .time_icon {
-  background: url("/img/btn/clock_basico.png") no-repeat;
+  background: url("img/btn/clock_basico.png") no-repeat;
   width: 22px;
   height: 22px;
   display: inline-block;
@@ -8816,7 +8816,7 @@ Index Styles
 
 /* line 463, ../sass/styles.scss */
 .item .video_curso.basico .video_icon {
-  background: url("/img/btn/video_basico.png") no-repeat;
+  background: url("img/btn/video_basico.png") no-repeat;
   width: 22px;
   height: 22px;
   display: inline-block;
@@ -8891,7 +8891,7 @@ Index Styles
 
 /* line 520, ../sass/styles.scss */
 .item .duracion_curso.graficas .time_icon {
-  background: url("/img/btn/clock_graficas.png") no-repeat;
+  background: url("img/btn/clock_graficas.png") no-repeat;
   width: 22px;
   height: 22px;
   display: inline-block;
@@ -8899,7 +8899,7 @@ Index Styles
 
 /* line 527, ../sass/styles.scss */
 .item .video_curso.graficas .video_icon {
-  background: url("/img/btn/video_graficas.png") no-repeat;
+  background: url("img/btn/video_graficas.png") no-repeat;
   width: 22px;
   height: 22px;
   display: inline-block;
@@ -8973,7 +8973,7 @@ Index Styles
 
 /* line 583, ../sass/styles.scss */
 .item .duracion_curso.tablas .time_icon {
-  background: url("/img/btn/clock_tablas.png") no-repeat;
+  background: url("img/btn/clock_tablas.png") no-repeat;
   width: 22px;
   height: 22px;
   display: inline-block;
@@ -8981,7 +8981,7 @@ Index Styles
 
 /* line 590, ../sass/styles.scss */
 .item .video_curso.tablas .video_icon {
-  background: url("/img/btn/video_tablas.png") no-repeat;
+  background: url("img/btn/video_tablas.png") no-repeat;
   width: 22px;
   height: 22px;
   display: inline-block;
@@ -9055,7 +9055,7 @@ Index Styles
 
 /* line 646, ../sass/styles.scss */
 .item .duracion_curso.macros .time_icon {
-  background: url("/img/btn/clock_macros.png") no-repeat;
+  background: url("img/btn/clock_macros.png") no-repeat;
   width: 22px;
   height: 22px;
   display: inline-block;
@@ -9063,7 +9063,7 @@ Index Styles
 
 /* line 653, ../sass/styles.scss */
 .item .video_curso.macros .video_icon {
-  background: url("/img/btn/video_macros.png") no-repeat;
+  background: url("img/btn/video_macros.png") no-repeat;
   width: 22px;
   height: 22px;
   display: inline-block;
@@ -9144,7 +9144,7 @@ Index Styles
 
 /* line 713, ../sass/styles.scss */
 .item a.downloads span {
-  background: url("/img/btn/download.png") no-repeat 0px 0px;
+  background: url("img/btn/download.png") no-repeat 0px 0px;
   width: 15px;
   height: 15px;
   position: absolute;
@@ -9168,7 +9168,7 @@ Index Styles
 
 /* line 736, ../sass/styles.scss */
 .item a.buy_btn_link .buy_btn {
-  background: url("/img/btn/buynow.png") no-repeat -6px -1px;
+  background: url("img/btn/buynow.png") no-repeat -6px -1px;
   width: 150px;
   height: 90px;
   padding: 20px;
@@ -9181,7 +9181,7 @@ Index Styles
 /* line 748, ../sass/styles.scss */
 #testimonials_slider {
   margin-top: 81px;
-  background: url("/img/bg/green_curves.png") no-repeat 0px 0px;
+  background: url("img/bg/green_curves.png") no-repeat 0px 0px;
   width: 977px;
   height: 128px;
   padding-left: 70px;
