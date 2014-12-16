@@ -270,7 +270,6 @@ Index Styles
 {
 	width: 100%;
 	height: 200px;
-	background: url($white_elegance) repeat left top;
 	color: $black;
 }
 
@@ -373,6 +372,16 @@ Index Styles
 #main_courses_slider .owl-controls .owl-nav .owl-next
 {
 	right: 10px;	
+}
+
+#main_courses_slider .owl-item
+{
+	opacity: 0;
+	transition: all 2s ease-in;
+}
+#main_courses_slider .owl-item.active
+{
+	opacity: 1;
 }
 
 //TAB 1
@@ -697,10 +706,6 @@ Index Styles
 	background: linear-gradient(to bottom,  #c9384e 0%,#5b0509 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9384e', endColorstr='#5b0509',GradientType=0 ); /* IE6-8 */
 }
-
-
-
-
 .item a.downloads
 {
 	position: relative;
@@ -716,7 +721,7 @@ Index Styles
 }
 .item img.product_img
 {
-	width: 206px;
+	max-width: 206px;
 }
 
 //Boton Comprar
@@ -830,3 +835,300 @@ Index Styles
 	font-size: em(9px);
 	display: block;
 }
+
+
+/* ==================================================================
+Nosotros Styles
+=====================================================================*/
+
+.container_nosotros
+{
+	margin-top: 20px;
+}
+.container_nosotros h3
+{
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+.container_nosotros p
+{
+	margin-bottom: 15px;
+	font-size: em(14px);
+	color: $black;
+}
+#owl_nosotros .owl-item
+{
+	opacity: 0;
+	transition: all 2s ease-in;
+}
+#owl_nosotros .owl-item.active
+{
+	opacity: 1;
+}
+#owl_nosotros .owl-pagination,
+#owl_nosotros .owl-buttons
+{
+	color: $black;
+	font-size: em(12px);
+}
+#owl_nosotros .owl-pagination .owl-page
+{
+	display: none;
+}
+#owl_nosotros .owl-pagination .owl-page.active,
+#owl_nosotros .owl-pagination .total_Slide
+{
+	display: inline-block;
+}
+#owl_nosotros .owl-pagination .total_Slide
+{
+	margin-left: 6px;
+}
+#owl_nosotros .owl-buttons
+{
+	height: 50px;
+	width: 100px;
+	position: absolute;
+	right: -26px;
+	bottom: -7px;
+}
+#owl_nosotros .owl-buttons .owl-prev
+{
+	left: 12px;
+}
+#owl_nosotros .owl-buttons .owl-next
+{
+	right: 2px;
+}
+#owl_nosotros .owl-buttons .owl-prev,
+#owl_nosotros .owl-buttons .owl-next
+{
+	width: 15px;
+	position: absolute;
+	top: 25px;
+}
+#owl_nosotros .item
+{
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+	border: solid 3px $white;
+	margin: 25px 17px;
+	min-height: 390px;
+	width: 450px;
+	padding: 0;
+	overflow: hidden;
+}
+#owl_nosotros .item .image_description
+{
+	position: absolute;
+	bottom: 0px;
+	font-size: em(12px);
+	font-weight: bold;
+}
+#owl_nosotros .owl-controls
+{
+	width: 100px;
+	text-align: right;
+	position: absolute;
+	bottom: 0px;
+	right: 40px;
+}
+
+/* ==================================================================
+Método Styles
+=====================================================================*/
+#owl_metodo
+{
+	margin: 15px 0; 
+}
+#owl_metodo .owl-item
+{
+	box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+	border: solid 2px $white;
+	max-width: 632px;
+	height: 338px;
+	overflow: hidden;
+}
+#owl_metodo .owl-item .item
+{
+	padding-top: 0;
+	margin: 0;
+}
+#owl_metodo .owl-page
+{
+	padding: 13px;
+	width: 53px;
+	max-height: 53px;
+	background: $white;
+	border: solid 3px $color_secondary;
+	border-radius: 50%;
+	display: inline-block;
+	margin: 10px 7px;
+	font-weight: bold;
+	color: #448CD4;
+	font-size: em(14px);
+	transition: all 0.3s ease;
+}
+#owl_metodo .owl-page:hover,
+#owl_metodo .owl-page.active
+{
+	background: $color_primary;
+	color: $white;
+}
+
+#owl_metodo .owl-item
+{
+	opacity: 0;
+	transition: all 2s ease-in;
+}
+#owl_metodo .owl-item.active
+{
+	opacity: 1;
+}
+
+a.green_link
+{
+	color: #fff;
+	display: block;
+	text-align: center;
+	margin-bottom: 10px;
+	border-radius: 9px;
+	padding: 12px 15px;
+	font-size: 0.875em;
+	line-height: 17px;
+	font-weight: bold;
+	text-decoration: none;
+	transition: all 1s ease;
+	background: #5e9f60; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzVlOWY2MCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyNjU2MmEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #5e9f60 0%, #26562a 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5e9f60), color-stop(100%,#26562a)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #5e9f60 0%,#26562a 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #5e9f60 0%,#26562a 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #5e9f60 0%,#26562a 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #5e9f60 0%,#26562a 100%); /* W3C */
+}
+a.green_link:hover
+{
+	background: #3d9e3f; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzNkOWUzZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxNTU0MWIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #3d9e3f 0%, #15541b 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3d9e3f), color-stop(100%,#15541b)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #3d9e3f 0%,#15541b 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #3d9e3f 0%,#15541b 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #3d9e3f 0%,#15541b 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #3d9e3f 0%,#15541b 100%); /* W3C */
+}
+
+/* ==================================================================
+Contáctenos Styles
+=====================================================================*/
+.container_contactenos h1
+{
+	padding-left: 0;	
+}
+.container_slider_contactenos
+{
+	margin-bottom: 30px;
+}
+.container_slider_contactenos h3
+{
+	font-size: em(30px);
+	margin-top: 10px;
+}
+.container_slider_contactenos h4
+{
+	font-family: bebas, sans-serif;
+	color: $brand_compulearning;
+	font-size: em(20px);
+}
+.container_slider_contactenos p
+{
+	margin: 0;
+	font-size: em(12px);
+}
+.container_slider_contactenos p strong
+{
+	font-family: bebas, sans-serif;
+}
+#owl_contactenos
+{
+	margin: 15px 0; 
+
+}
+#owl_contactenos .owl-item .item
+{
+	padding-top: 0;
+	margin: 0;
+}
+
+
+#owl_contactenos .owl-wrapper-outer
+{
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+	width: 466px;
+	height: 190px;
+	overflow: hidden;
+}
+
+#owl_contactenos .owl-controls
+{
+
+}
+
+#owl_contactenos .owl-pagination
+{
+
+}
+#owl_contactenos .owl-pagination
+{
+	text-align: right;
+	width: 467px;
+}
+#owl_contactenos .owl-page
+{
+	display: inline-block;
+	margin: 7px 0px 0 22px;
+	font-weight: bold;
+}
+#owl_contactenos .owl-page:hover .owl-numbers,
+#owl_contactenos .owl-page.active .owl-numbers
+{
+	color: darken($green, 10%);	
+}
+#owl_contactenos .owl-numbers
+{
+	font-size: em(14px);
+	color: $black;
+}
+
+
+/* ==================================================================
+Compra Styles
+=====================================================================*/
+.container_compra_curso
+{
+	margin-bottom: 30px;
+}
+.container_compra_curso h1
+{
+	padding-left: 0;
+}
+.container_compra_curso h3
+{
+	border-bottom: solid 1px #dfdfdf;
+	margin-bottom: 20px;
+}
+.container_compra_curso p
+{
+	font-size: em(14px);
+	text-align: left;
+}
+.container_compra_curso .container_form
+{
+	padding-left: 50px;
+}
+
+
+
