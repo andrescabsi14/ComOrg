@@ -739,3 +739,94 @@ Index Styles
 	font-size: em(14px);
 	margin-right: 37px;
 }
+
+#testimonials_slider
+{
+	margin-top: 81px;
+	background: url($green_curves)no-repeat 0px 0px;
+	width: 977px;
+	height: 128px;
+	padding-left: 70px;
+	z-index: 0;
+}
+#testimonials_slider .owl-stage-outer .owl-stage
+{
+	margin: 20px 0 0 -24px;
+}
+#testimonials_slider .owl-dots
+{
+	width: 120px;
+	height: 23px;
+	position: absolute;
+	right: 0;
+	top: 43px;
+}
+#testimonials_slider .owl-dots .owl-dot
+{
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+	background: $color_primary;
+	margin: 0 2px;
+	border-radius: 50%;
+}
+#testimonials_slider .owl-dots .owl-dot:hover,
+#testimonials_slider .owl-dots .owl-dot.active
+{
+	background: $color_accent;
+}
+#testimonials_slider .container_image_testimonial
+{
+	border-radius: 50%;
+	border: solid 2px white;
+	width: 82px;
+	height: 82px;
+	background: white;
+	display: inline-block;
+	padding: 0;
+	overflow: hidden;
+}
+#testimonials_slider .container_image_testimonial img
+{
+	width: 78px;
+	height: 100%;
+	border-radius: 50%;
+}
+#testimonials_slider h3
+{
+	margin: 3px 0 3px 0;
+	display: block;
+	width: 270px;
+	height: 31px;
+	overflow: hidden;
+}
+#testimonials_slider h3 a
+{
+	color: $color_accent;
+	font-size: em(20px);
+}
+#testimonials_slider p
+{
+	display: block;
+	font-size: em(12px);
+	color: $white;
+	width: 350px;
+	line-height: 1.1;
+	text-rendering: optimizeLegibility;
+}
+.testimonials_main_title
+{
+	position: absolute;
+	right: 196px;
+	top: 129px;
+	color: $color_primary;
+	font-size: em(30px);
+	line-height: 0.9;
+	text-align: right;
+}
+.testimonials_main_title span
+{
+	color: $color_accent;
+	font-size: em(9px);
+	display: block;
+}

@@ -9392,3 +9392,105 @@ Index Styles
   font-size: 0.875em;
   margin-right: 37px;
 }
+
+/* line 743, ../sass/styles.scss */
+#testimonials_slider {
+  margin-top: 81px;
+  background: url("/img/bg/green_curves.png") no-repeat 0px 0px;
+  width: 977px;
+  height: 128px;
+  padding-left: 70px;
+  z-index: 0;
+}
+
+/* line 752, ../sass/styles.scss */
+#testimonials_slider .owl-stage-outer .owl-stage {
+  margin: 20px 0 0 -24px;
+}
+
+/* line 756, ../sass/styles.scss */
+#testimonials_slider .owl-dots {
+  width: 120px;
+  height: 23px;
+  position: absolute;
+  right: 0;
+  top: 43px;
+}
+
+/* line 764, ../sass/styles.scss */
+#testimonials_slider .owl-dots .owl-dot {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  background: #4EA635;
+  margin: 0 2px;
+  border-radius: 50%;
+}
+
+/* line 773, ../sass/styles.scss */
+#testimonials_slider .owl-dots .owl-dot:hover,
+#testimonials_slider .owl-dots .owl-dot.active {
+  background: #064329;
+}
+
+/* line 778, ../sass/styles.scss */
+#testimonials_slider .container_image_testimonial {
+  border-radius: 50%;
+  border: solid 2px white;
+  width: 82px;
+  height: 82px;
+  background: white;
+  display: inline-block;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* line 789, ../sass/styles.scss */
+#testimonials_slider .container_image_testimonial img {
+  width: 78px;
+  height: 100%;
+  border-radius: 50%;
+}
+
+/* line 795, ../sass/styles.scss */
+#testimonials_slider h3 {
+  margin: 3px 0 3px 0;
+  display: block;
+  width: 270px;
+  height: 31px;
+  overflow: hidden;
+}
+
+/* line 803, ../sass/styles.scss */
+#testimonials_slider h3 a {
+  color: #064329;
+  font-size: 1.25em;
+}
+
+/* line 808, ../sass/styles.scss */
+#testimonials_slider p {
+  display: block;
+  font-size: 0.75em;
+  color: #fff;
+  width: 350px;
+  line-height: 1.1;
+  text-rendering: optimizeLegibility;
+}
+
+/* line 817, ../sass/styles.scss */
+.testimonials_main_title {
+  position: absolute;
+  right: 196px;
+  top: 129px;
+  color: #4EA635;
+  font-size: 1.875em;
+  line-height: 0.9;
+  text-align: right;
+}
+
+/* line 827, ../sass/styles.scss */
+.testimonials_main_title span {
+  color: #064329;
+  font-size: 0.5625em;
+  display: block;
+}

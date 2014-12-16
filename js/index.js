@@ -1,6 +1,7 @@
 $(document).ready(function(){
-	
-  	$("#main_courses_slider").owlCarousel({
+
+	var owl = $("#main_courses_slider"); // save reference to variable
+  	owl.owlCarousel({
         items:1,
         loop: true,
         center: true,
@@ -8,40 +9,28 @@ $(document).ready(function(){
         autoplay: true,
 	    nav: true,
 	    navText: ["<",">"],
-	    autoplayTimeout: 16000,
+	    autoplayTimeout: 10000,
 	    dots: true,
     });
-    /*// Navigation Events
+    $("#main_courses_slider .owl-dot").on('click',function(){
+  		owl.trigger('stop.owl.autoplay');
+  		console.log("Hola");
+	});
+
+
+    // Navigation Events
     $('#testimonials_slider').owlCarousel({
     	items:1,
 	    loop:true,
 	    margin:10,
 	    autoplay: true,
-	    nav: true,
-	    navText: ["prev","next"],
-	    pagination: true,
-	    paginationNumbers: true,
-	    stopOnHover : true
-	    /*responsiveClass:true,
-	    responsive:{
-	        0:{
-	            items:1,
-	            nav:true
-	        },
-	        600:{
-	            items:3,
-	            nav:false
-	        },
-	        1000:{
-	            items:5,
-	            nav:true,
-	            loop:false
-	        }
-	    }/
-	});*/
+	    nav: false,
+	    dots: true,
+	    autoplayTimeout: 10000,
+	});
 
 	//Add classes each dot
-	$('#main_courses_slider .owl-dot').attr('id', function(i) {
+	$("#main_courses_slider .owl-dot").attr('id', function(i) {
 			return 'slide'+(i+1);
 	});
 
@@ -51,5 +40,8 @@ $(document).ready(function(){
 	$("#main_courses_slider #slide3").prepend('<p>Gráficas</p>');
 	$("#main_courses_slider #slide4").prepend('<p>Tablas Dinámicas</p>');
 	$("#main_courses_slider #slide5").prepend('<p>Macros</p>');
+
+
+
 
 });//End doc ready
