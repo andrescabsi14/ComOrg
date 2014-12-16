@@ -11,12 +11,9 @@ $(document).ready(function(){
 	    nav: true,
 	    navText: ["<",">"],
 	    autoplayTimeout: 10000,
-	    dots: true, 
+	    dots: true,
+	    autoplayHoverPause:true,
     });
-    $("#main_courses_slider .owl-dot").on('click',function(){
-  		owl.trigger('stop.owl.autoplay');
-  		//console.log("Hola");
-	});
 
 
     // Navigation Events
