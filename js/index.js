@@ -1,22 +1,47 @@
 $(document).ready(function(){
 
-	var owl = $("#main_courses_slider"); // save reference to variable
-  	owl.owlCarousel({
-        items:1,
-        loop: true,
-        center: true,
-        URLhashListener:true,
-        startPosition: 'URLHash',
-        autoplay: true,
-	    nav: true,
-	    navText: ["<",">"],
-	    autoplayTimeout: 10000,
-	    dots: true,
-	    autoplayHoverPause:true,
-    });
+	//SLIDER 1
+	$('#carousel-example-generic').carousel({
+		//interval: false
+	});
+
+		$('.carousel-indicators li').click(function(){
+			$('#carousel-example-generic').carousel('pause');
+		});
 
 
-    // Navigation Events
+		//URL HASH
+		var url = document.location.toString();
+		if (url.match('#')) {
+		    // Clear active item
+		    $('#carousel-example-generic .carousel-inner .item.active').removeClass('active');
+		    $('#carousel-example-generic .carousel-indicators li.active').removeClass('active');
+
+		    // Activate item number #hash
+		    $('.carousel-inner div:nth-child(' + url.split('#')[1] + ')').addClass('active');
+		    $('.carousel-indicators li:nth-child(' + url.split('#')[1] + ')').addClass('active');
+		}
+
+		$('#carousel-example-generic').bind('slid', function (e) {
+		    // Update location based on slide (index is 0-based)
+		    window.location.hash = "#"+ parseInt($('#carousel-example-generic .carousel-inner .item.active').index()+1);
+		});
+
+
+
+
+
+
+
+	
+
+
+	owl_testimonial();
+});//End doc ready
+
+
+// Navigation Events
+function owl_testimonial(){
     $('#testimonials_slider').owlCarousel({
     	items:1,
 	    loop:true,
@@ -26,20 +51,9 @@ $(document).ready(function(){
 	    dots: true,
 	    autoplayTimeout: 10000,
 	});
+}
 
-	//Add classes each dot
-	$("#main_courses_slider .owl-dot").attr('id', function(i) {
-			return 'slide'+(i+1);
-	});
-
-	//Print slide name
-	$("#main_courses_slider #slide1").prepend('<p>Cursos</p>');
-	$("#main_courses_slider #slide2").prepend('<p>Básico</p>');
-	$("#main_courses_slider #slide3").prepend('<p>Gráficas</p>');
-	$("#main_courses_slider #slide4").prepend('<p>Tablas Dinámicas</p>');
-	$("#main_courses_slider #slide5").prepend('<p>Macros</p>');
+	
 
 
 
-
-});//End doc ready
