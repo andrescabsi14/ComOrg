@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 	//SLIDER 1
 	$('#carousel-example-generic').carousel({
-		//interval: false
+		interval: 10000
 	});
 
 		$('.carousel-indicators li').click(function(){
