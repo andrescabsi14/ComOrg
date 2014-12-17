@@ -27,7 +27,7 @@ $(document).ready(function(){
 		    window.location.hash = "#"+ parseInt($('#carousel-example-generic .carousel-inner .item.active').index()+1);
 		});
 
-
+console.log("test");
 
 
 
