@@ -273,115 +273,124 @@ Index Styles
 	color: $black;
 }
 
-//Slider Controls
-#main_courses_slider .owl-controls .owl-dots
+//Slider
+.carousel-indicators
 {
-	height: 50px;
-	overflow: hidden;
-	text-align: center;
-	margin-top: 40px;
+	bottom: -65px;
+	width: 80%;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
 }
-#main_courses_slider .owl-controls .owl-dots .owl-dot
+.carousel-indicators li,
+.carousel-indicators li.active
 {
-	width: 110px;
+	border: none;
 	display: inline-block;
-	margin-right: 45px;
+	border-radius: none;
+	width: 110px;
+	height: 30px;
+	margin-right: 20px;
+	position: relative;
+	text-indent: initial;
 }
-#main_courses_slider .owl-controls .owl-dots .owl-dot span
-{
-	width: 100%;
-	height: 10px;
-	float: left;
-	background: $color_primary;
-}
-#main_courses_slider .owl-controls .owl-dots .owl-dot p
-{
-	color: $color_primary;
-	height: 20px;
-	margin: 0;
-	font-size: em(12px);
-	font-weight: bold;
-}
-#main_courses_slider .owl-dots  #slide1:hover span,
-#main_courses_slider .owl-dots  #slide1.active span,
+//HOVER AND ACTIVE
+#carousel-example-generic .carousel-indicators li.cursos:hover span,
+#carousel-example-generic .carousel-indicators li.cursos.active span
 {
 	background: $black;
 }
-#main_courses_slider .owl-dots  #slide2:hover span,
-#main_courses_slider .owl-dots  #slide2.active span,
+#carousel-example-generic .carousel-indicators li.basico:hover span,
+#carousel-example-generic .carousel-indicators li.basico.active span
 {
 	background: $product_basico;
 }
-#main_courses_slider .owl-dots  #slide3:hover span,
-#main_courses_slider .owl-dots  #slide3.active span,
+#carousel-example-generic .carousel-indicators li.graficas:hover span,
+#carousel-example-generic .carousel-indicators li.graficas.active span
 {
 	background: $product_graficas;
 }
-#main_courses_slider .owl-dots  #slide4:hover span,
-#main_courses_slider .owl-dots  #slide4.active span,
+#carousel-example-generic .carousel-indicators li.tablas:hover span,
+#carousel-example-generic .carousel-indicators li.tablas.active span
 {
 	background: $product_tablas;
 }
-#main_courses_slider .owl-dots  #slide5:hover span,
-#main_courses_slider .owl-dots  #slide5.active span,
+#carousel-example-generic .carousel-indicators li.macros:hover span,
+#carousel-example-generic .carousel-indicators li.macros.active span
 {
 	background: $product_macros;
 }
-#main_courses_slider .owl-dots  #slide1:hover p,
-#main_courses_slider .owl-dots  #slide1.active p
+#carousel-example-generic .carousel-indicators li.cursos:hover div,
+#carousel-example-generic .carousel-indicators li.cursos.active div
 {
 	color: $color_accent;
 }
-#main_courses_slider .owl-dots  #slide2:hover p,
-#main_courses_slider .owl-dots  #slide2.active p
+#carousel-example-generic .carousel-indicators li.basico:hover div,
+#carousel-example-generic .carousel-indicators li.basico.active div
 {
 	color: $product_basico;
 }
-#main_courses_slider .owl-dots  #slide3:hover p,
-#main_courses_slider .owl-dots  #slide3.active p
+#carousel-example-generic .carousel-indicators li.graficas:hover div,
+#carousel-example-generic .carousel-indicators li.graficas.active div
 {
 	color: $product_graficas;
 }
-#main_courses_slider .owl-dots  #slide4:hover p,
-#main_courses_slider .owl-dots  #slide4.active p
+#carousel-example-generic .carousel-indicators li.tablas:hover div,
+#carousel-example-generic .carousel-indicators li.tablas.active div
 {
 	color: $product_tablas;
 }
-#main_courses_slider .owl-dots  #slide5:hover p,
-#main_courses_slider .owl-dots  #slide5.active p
+#carousel-example-generic .carousel-indicators li.macros:hover div,
+#carousel-example-generic .carousel-indicators li.macros.active div
 {
 	color: $product_macros;
 }
 
-#main_courses_slider .owl-controls .owl-nav
+.carousel-indicators li span
 {
-	
+	border-radius: 10px;
+	cursor: pointer;
+	background: $color_primary;
+	width: 110px;
+	height: 10px;
+	display: block;
 }
-#main_courses_slider .owl-controls .owl-nav .owl-prev,
-#main_courses_slider .owl-controls .owl-nav .owl-next
+.carousel-indicators li div
 {
-	width: 20px;
-	height: 20px;
+	font-size: em(12px);
+	font-weight: bold;
+	display: block;
+	color: #333;
 	position: absolute;
-	top: 240px;
+	left: 0;
+	bottom: 0;
 }
-#main_courses_slider .owl-controls .owl-nav .owl-prev
+.container_slider .carousel
 {
-	left: 10px;
+	height: 530px;
 }
-#main_courses_slider .owl-controls .owl-nav .owl-next
+.container_slider .carousel-control.left,
+.container_slider .carousel-control.left:hover,
+.container_slider .carousel-control.right,
+.container_slider .carousel-control.right:hover
 {
-	right: 10px;	
+	background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.container_slider .carousel-control
+{
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9);
+	width: 7%;
 }
 
-#main_courses_slider .owl-item
+
+.container_slider .carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev
 {
-	opacity: 0;
-	transition: all 2s ease-in;
+	margin-left: -40px;
 }
-#main_courses_slider .owl-item.active
+.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next
 {
-	opacity: 1;
+	margin-right: -18px;
 }
 
 //TAB 1
@@ -753,6 +762,10 @@ Index Styles
 	height: 128px;
 	padding-left: 70px;
 	z-index: 0;
+}
+#testimonials_slider .item
+{
+	overflow: hidden;
 }
 #testimonials_slider .owl-stage-outer .owl-stage
 {
