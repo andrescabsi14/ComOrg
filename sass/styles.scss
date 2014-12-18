@@ -842,10 +842,18 @@ Index Styles
 	line-height: 1.1;
 	text-rendering: optimizeLegibility;
 }
+.testimonials_main_title_container
+{
+	width: 949px;
+	display: block;
+	height: 200px;
+	position: relative;
+	margin-top: -209px;
+}
 .testimonials_main_title
 {
 	position: absolute;
-	right: 196px;
+	right: 0;
 	top: 129px;
 	color: $color_primary;
 	font-size: em(30px);
