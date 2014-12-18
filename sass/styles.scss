@@ -231,6 +231,11 @@ footer ul.container_bottom_nav li a
 {
 	text-decoration: none;
 }
+footer ul.container_bottom_nav li:hover a,
+footer ul.container_bottom_nav li.active a
+{
+	color: $color_accent;
+}
 footer .container_credits
 {
 	font-size: em(11px);
@@ -391,8 +396,12 @@ Index Styles
 {
 	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9);
 	width: 7%;
+	color: #4EA635;
 }
-
+.container_slider .carousel-control:hover
+{
+	color: #4EA635;
+}
 
 .container_slider .carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev
 {
