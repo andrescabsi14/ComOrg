@@ -3,6 +3,7 @@ $(document).ready(function(){
 	owl_testimonial();
 });//End doc ready
 
+
 // Main Slider
 function mainSlider(){
 
@@ -47,6 +48,7 @@ function owl_testimonial(){
 	    dots: true,
 	    autoplayTimeout: 10000,
 	});
+
 }
 
 	
