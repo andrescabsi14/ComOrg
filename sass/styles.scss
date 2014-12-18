@@ -786,7 +786,7 @@ Index Styles
 	width: 120px;
 	height: 23px;
 	position: absolute;
-	right: 0;
+	right: -54px;
 	top: 43px;
 }
 #testimonials_slider .owl-dots .owl-dot
@@ -1051,6 +1051,11 @@ Contáctenos Styles
 {
 	padding-left: 0;	
 }
+.container_contactenos form
+{
+	width: 100%;
+	padding: 10% 13%;
+}
 .container_slider_contactenos
 {
 	margin-bottom: 30px;
@@ -1093,16 +1098,6 @@ Contáctenos Styles
 	width: 466px;
 	height: 190px;
 	overflow: hidden;
-}
-
-#owl_contactenos .owl-controls
-{
-
-}
-
-#owl_contactenos .owl-pagination
-{
-
 }
 #owl_contactenos .owl-pagination
 {
@@ -1153,5 +1148,164 @@ Compra Styles
 	padding-left: 50px;
 }
 
-
+//Form
+.container_compra_curso form
+{
+	width: 315px;
+}
+.container_compra_curso .boton-landing-profeexcel
+{
+	width: 273px;
+	height: 35px;
+	background-color: #365C0A;
+	color: #fff;
+	font-weight: 100;
+	margin-top: 10px;
+	transition: all 0.3s ease;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	cursor: pointer;
+}
+.container_compra_curso .boton-landing-profeexcel:hover
+{
+	background-color: #5EA30D;
+}
+.container_compra_curso #form_profeexcel label
+{
+	font-family: arial;
+	font-size: 15px;
+	color: #5B8926;
+}
+.container_compra_curso .input_formulario_Ccmp,
+.container_compra_curso .input_formulario_cupon
+{
+	padding: 16px 12px;
+}
+.container_compra_curso .input_formulario_Ccmp
+{
+	display: block;
+	width: 100%;
+	margin-bottom: 20px;
+	height: 23px;
+	font-size: em(14px);
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	-webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	font-family: helvetica,arial;
+}
+.container_compra_curso .input_formulario_Ccmp2
+{
+	font-size: em(14px);
+	color: #555;
+	background-color: transparent;
+	background-image: none;
+	border: none;
+	font-family: helvetica,arial;
+}
+.container_compra_curso #Amount
+{
+	width: 100px;
+}
+.container_compra_curso .input_formulario_Ccmp:hover
+{
+	border: 1px solid #428bca;
+}
+.container_compra_curso .input_formulario_cupon
+{
+	display: inline-block;
+	width: 100%;
+	height: 13px;
+	margin-bottom: 10px;
+	font-size: em(14px);
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	-webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	font-family: helvetica,arial;
+}
+.container_compra_curso .Curso-titulo-formulario-comp,
+.labels-formulario-comp
+{
+	display: block;
+	color: #3E3E3E;
+	font-family: asap, sans-serif;
+	font-weight: 400;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.container_compra_curso .Curso-titulo-formulario-comp2
+{
+	color: #3E3E3E;
+	font-family: asap, sans-serif;
+	font-weight: 400;
+	font-weight: bold;
+}
+.container_compra_curso .cat_dropdown-formulario-comp
+{
+	display: inline-block;
+	margin-bottom: 10px;
+	width: 316px;
+	display: block;
+}
+.container_compra_curso .invisible
+{
+	display: none;
+}
+.container_compra_curso .boton-formulario-comp
+{
+	display: block;
+	color: #FFFFFF;
+	font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+	font-size: em(12px);
+	font-weight: bold;
+	text-align: center;
+	padding: 8px 11px 6px;
+	cursor: pointer;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #4CAE4C;
+	background-color: #5CB85C;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	border-radius: 4px;
+}
+.container_compra_curso .boton-formulario-comp:hover
+{
+	background-color: #4CAE4C;
+}
+.container_compra_curso #agrupacion-monto
+{
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+.container_compra_curso .boton-aplicar-boton,
+.boton-aplicar-boton a
+{
+	padding-top: 7px;
+	padding-bottom: 6px;
+	padding-left: 13px;
+	padding-right: 13px;
+	background-color: #D9535F;
+	border-radius: 4px;
+}
+.container_compra_curso .cat_dropdownCompulearningOrg 
+{
+	width: 316px;
+	margin-bottom: 20px;
+}
 
