@@ -123,7 +123,62 @@
 						<p><strong>Móvil:</strong> +57 312 431 3742</p>
 					</article>
 					<article class="container_contactenos_form col-xs-6">
-						<form action=""></form>
+						<!-- ///////////////////////////////////////////////////////////////
+						FORM
+						/////////////////////////////////////////////////////////////// -->
+						<form name="catwebformform27029" method="post" onsubmit="return checkWholeForm27029(this)"
+						enctype="multipart/form-data" action="/FormProcessv2.aspx?WebFormID=112231&OID={module_oid}&OTYPE={module_otype}&EID={module_eid}&CID={module_cid}">
+
+						<label class="Curso-titulo-formulario-comp2" for="FirstName">Nombre<span class="req">*</span>
+						</label>
+						<input type="text" name="FirstName" id="FirstName" class="cat_textbox" maxlength="255"
+						/>
+						<label class="Curso-titulo-formulario-comp2" for="LastName">Apellido <span class="req">*</span>
+						</label>
+						<input type="text" name="LastName" id="LastName" class="cat_textbox" maxlength="255"
+						/>
+						<label class="Curso-titulo-formulario-comp2" for="EmailAddress">Correo electrónico <span class="req">*</span>
+						</label>
+						<input type="text" name="EmailAddress" id="EmailAddress" class="cat_textbox" maxlength="255"
+						/>
+						<label class="Curso-titulo-formulario-comp2" for="CAT_Custom_423218">Mensaje</label>
+						<textarea name="CAT_Custom_423218" id="CAT_Custom_423218" cols="10" rows="4" class="cat_listbox"
+						onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
+						<input class="cat_button" type="submit" value="Enviar" id="catwebformbutton" />
+						<script type="text/javascript" src="/CatalystScripts/ValidationFunctions.js"></script>
+						<script type="text/javascript">
+						//<![CDATA[
+						var submitcount27029 = 0;
+						function checkWholeForm27029(theForm) {
+						  var why = "";
+						  if (theForm.FirstName) why += isEmpty(theForm.FirstName.value, "Nombre de pila");
+						  if (theForm.LastName) why += isEmpty(theForm.LastName.value, "Apellido");
+						  if (theForm.EmailAddress) why += checkEmail(theForm.EmailAddress.value);
+						  if (why != "") {
+						    alert(why);
+						    return false;
+						  }
+						  if (submitcount27029 == 0) {
+						    submitcount27029++;
+						    theForm.submit();
+						    return false;
+						  }
+						  else {
+						    alert("El envío del formulario está en progreso.");
+						    return false;
+						  }
+						}
+						//]]>
+						</script>
+						</form>
+
+
+
+
+
+
+
+
 					</article>
 				</div>
 			</div>

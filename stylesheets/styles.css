@@ -8148,6 +8148,23 @@ button.close {
 GLOBAL CONFIG
 =====================================================================*/
 /* ==================================================================
+UTILITIES
+=====================================================================*/
+/*if variable-exist(font-url--google){
+	@import url($font-url--google);
+}
+*/
+/* line 22, ../sass/_utilities.scss */
+.container_slider h1,
+.container_slider h3 {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* ==================================================================
 Base Styles
 =====================================================================*/
 @font-face {
@@ -8157,19 +8174,19 @@ Base Styles
   font-weight: normal;
   font-style: normal;
 }
-/* line 18, ../sass/_base.scss */
+/* line 20, ../sass/_base.scss */
 * {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 22, ../sass/_base.scss */
+/* line 24, ../sass/_base.scss */
 html {
   position: relative;
   min-height: 100%;
 }
 
-/* line 27, ../sass/_base.scss */
+/* line 29, ../sass/_base.scss */
 body {
   font-size: 16px;
   line-height: 1.5;
@@ -8179,7 +8196,7 @@ body {
   background: url("../img/bg/white_elegance.png") repeat left top;
 }
 
-/* line 35, ../sass/_base.scss */
+/* line 37, ../sass/_base.scss */
 header {
   text-align: center;
   overflow: hidden;
@@ -8189,47 +8206,95 @@ header {
   width: 100%;
 }
 
-/* line 43, ../sass/_base.scss */
+/* line 45, ../sass/_base.scss */
 h1,
 h2,
 h3 {
   font-family: bebas, sans-serif;
 }
 
-/* line 49, ../sass/_base.scss */
+/* line 51, ../sass/_base.scss */
 h1 {
   font-weight: 300;
   line-height: 1.0952380952;
   color: #064329;
 }
 
-/* line 54, ../sass/_base.scss */
+/* line 56, ../sass/_base.scss */
 h2 {
   font-weight: 100;
   color: #0b0b0b;
 }
 
-/* line 58, ../sass/_base.scss */
+/* line 60, ../sass/_base.scss */
 h3 {
   color: #3c7f29;
 }
 
-/* line 61, ../sass/_base.scss */
+/* line 63, ../sass/_base.scss */
 p {
   line-height: 1.3;
 }
 
-/* line 65, ../sass/_base.scss */
+/* line 67, ../sass/_base.scss */
 a {
   text-decoration: none;
 }
 
-/* line 69, ../sass/_base.scss */
+/* line 71, ../sass/_base.scss */
 a:hover {
   color: #064329;
 }
 
-/* line 72, ../sass/_base.scss */
+/* ==================================================================
+Forms
+=====================================================================*/
+/* line 82, ../sass/_base.scss */
+form label {
+  display: block;
+  color: #0b0b0b;
+  font-family: asap, sans-serif;
+  font-weight: bold;
+  font-size: 0.875em;
+}
+
+/* line 91, ../sass/_base.scss */
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px 12px;
+  font-size: 0.875em;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  font-family: helvetica,arial;
+}
+
+/* line 109, ../sass/_base.scss */
+form input[type=submit] {
+  display: block;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 8px 25px 6px;
+  cursor: pointer;
+  border-width: solid 1px #4CAE4C;
+  background-color: #5CB85C;
+  border-radius: 4px;
+  width: auto;
+}
+
+/* ==================================================================
+Main Content
+=====================================================================*/
+/* line 126, ../sass/_base.scss */
 .main_content {
   padding: 123px 0 120px 0;
   float: left;
@@ -8237,12 +8302,12 @@ a:hover {
   z-index: 0;
 }
 
-/* line 79, ../sass/_base.scss */
+/* line 133, ../sass/_base.scss */
 .main_content.inner {
   margin: 20px 0;
 }
 
-/* line 83, ../sass/_base.scss */
+/* line 137, ../sass/_base.scss */
 .main_content.inner h1 {
   border-bottom: solid 1px #dfdfdf;
 }
@@ -8250,7 +8315,7 @@ a:hover {
 /* ==================================================================
 Buttons Styles
 =====================================================================*/
-/* line 91, ../sass/_base.scss */
+/* line 145, ../sass/_base.scss */
 .btn_exito {
   border-width: 1px;
   border-style: solid;
@@ -8267,29 +8332,12 @@ Buttons Styles
   transition: all 0.4s ease;
 }
 
-/* line 107, ../sass/_base.scss */
+/* line 161, ../sass/_base.scss */
 .btn_exito:hover {
   border-color: #398439;
   background-color: #47A447;
   text-decoration: none;
   color: #fff;
-}
-
-/* ==================================================================
-UTILITIES
-=====================================================================*/
-/*if variable-exist(font-url--google){
-	@import url($font-url--google);
-}
-*/
-/* line 22, ../sass/_utilities.scss */
-.container_slider h1,
-.container_slider h3 {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
 }
 
 /* ==================================================================
@@ -9225,7 +9273,7 @@ Index Styles
   width: 120px;
   height: 23px;
   position: absolute;
-  right: 0;
+  right: -54px;
   top: 43px;
 }
 
@@ -9534,46 +9582,52 @@ Contáctenos Styles
 }
 
 /* line 1054, ../sass/styles.scss */
+.container_contactenos form {
+  width: 100%;
+  padding: 10% 13%;
+}
+
+/* line 1059, ../sass/styles.scss */
 .container_slider_contactenos {
   margin-bottom: 30px;
 }
 
-/* line 1058, ../sass/styles.scss */
+/* line 1063, ../sass/styles.scss */
 .container_slider_contactenos h3 {
   font-size: 1.875em;
   margin-top: 10px;
 }
 
-/* line 1063, ../sass/styles.scss */
+/* line 1068, ../sass/styles.scss */
 .container_slider_contactenos h4 {
   font-family: bebas, sans-serif;
   color: #448CD4;
   font-size: 1.25em;
 }
 
-/* line 1069, ../sass/styles.scss */
+/* line 1074, ../sass/styles.scss */
 .container_slider_contactenos p {
   margin: 0;
   font-size: 0.75em;
 }
 
-/* line 1074, ../sass/styles.scss */
+/* line 1079, ../sass/styles.scss */
 .container_slider_contactenos p strong {
   font-family: bebas, sans-serif;
 }
 
-/* line 1078, ../sass/styles.scss */
+/* line 1083, ../sass/styles.scss */
 #owl_contactenos {
   margin: 15px 0;
 }
 
-/* line 1083, ../sass/styles.scss */
+/* line 1088, ../sass/styles.scss */
 #owl_contactenos .owl-item .item {
   padding-top: 0;
   margin: 0;
 }
 
-/* line 1090, ../sass/styles.scss */
+/* line 1095, ../sass/styles.scss */
 #owl_contactenos .owl-wrapper-outer {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
   width: 466px;
@@ -9581,26 +9635,26 @@ Contáctenos Styles
   overflow: hidden;
 }
 
-/* line 1107, ../sass/styles.scss */
+/* line 1102, ../sass/styles.scss */
 #owl_contactenos .owl-pagination {
   text-align: right;
   width: 467px;
 }
 
-/* line 1112, ../sass/styles.scss */
+/* line 1107, ../sass/styles.scss */
 #owl_contactenos .owl-page {
   display: inline-block;
   margin: 7px 0px 0 22px;
   font-weight: bold;
 }
 
-/* line 1118, ../sass/styles.scss */
+/* line 1113, ../sass/styles.scss */
 #owl_contactenos .owl-page:hover .owl-numbers,
 #owl_contactenos .owl-page.active .owl-numbers {
   color: #3c7f29;
 }
 
-/* line 1123, ../sass/styles.scss */
+/* line 1118, ../sass/styles.scss */
 #owl_contactenos .owl-numbers {
   font-size: 0.875em;
   color: #0b0b0b;
@@ -9609,29 +9663,207 @@ Contáctenos Styles
 /* ==================================================================
 Compra Styles
 =====================================================================*/
-/* line 1133, ../sass/styles.scss */
+/* line 1128, ../sass/styles.scss */
 .container_compra_curso {
   margin-bottom: 30px;
 }
 
-/* line 1137, ../sass/styles.scss */
+/* line 1132, ../sass/styles.scss */
 .container_compra_curso h1 {
   padding-left: 0;
 }
 
-/* line 1141, ../sass/styles.scss */
+/* line 1136, ../sass/styles.scss */
 .container_compra_curso h3 {
   border-bottom: solid 1px #dfdfdf;
   margin-bottom: 20px;
 }
 
-/* line 1146, ../sass/styles.scss */
+/* line 1141, ../sass/styles.scss */
 .container_compra_curso p {
   font-size: 0.875em;
   text-align: left;
 }
 
-/* line 1151, ../sass/styles.scss */
+/* line 1146, ../sass/styles.scss */
 .container_compra_curso .container_form {
   padding-left: 50px;
+}
+
+/* line 1152, ../sass/styles.scss */
+.container_compra_curso form {
+  width: 315px;
+}
+
+/* line 1156, ../sass/styles.scss */
+.container_compra_curso .boton-landing-profeexcel {
+  width: 273px;
+  height: 35px;
+  background-color: #365C0A;
+  color: #fff;
+  font-weight: 100;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  cursor: pointer;
+}
+
+/* line 1170, ../sass/styles.scss */
+.container_compra_curso .boton-landing-profeexcel:hover {
+  background-color: #5EA30D;
+}
+
+/* line 1174, ../sass/styles.scss */
+.container_compra_curso #form_profeexcel label {
+  font-family: arial;
+  font-size: 15px;
+  color: #5B8926;
+}
+
+/* line 1180, ../sass/styles.scss */
+.container_compra_curso .input_formulario_Ccmp,
+.container_compra_curso .input_formulario_cupon {
+  padding: 16px 12px;
+}
+
+/* line 1185, ../sass/styles.scss */
+.container_compra_curso .input_formulario_Ccmp {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  height: 23px;
+  font-size: 0.875em;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  font-family: helvetica,arial;
+}
+
+/* line 1204, ../sass/styles.scss */
+.container_compra_curso .input_formulario_Ccmp2 {
+  font-size: 0.875em;
+  color: #555;
+  background-color: transparent;
+  background-image: none;
+  border: none;
+  font-family: helvetica,arial;
+}
+
+/* line 1213, ../sass/styles.scss */
+.container_compra_curso #Amount {
+  width: 100px;
+}
+
+/* line 1217, ../sass/styles.scss */
+.container_compra_curso .input_formulario_Ccmp:hover {
+  border: 1px solid #428bca;
+}
+
+/* line 1221, ../sass/styles.scss */
+.container_compra_curso .input_formulario_cupon {
+  display: inline-block;
+  width: 100%;
+  height: 13px;
+  margin-bottom: 10px;
+  font-size: 0.875em;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  font-family: helvetica,arial;
+}
+
+/* line 1240, ../sass/styles.scss */
+.container_compra_curso .Curso-titulo-formulario-comp,
+.labels-formulario-comp {
+  display: block;
+  color: #3E3E3E;
+  font-family: asap, sans-serif;
+  font-weight: 400;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* line 1250, ../sass/styles.scss */
+.container_compra_curso .Curso-titulo-formulario-comp2 {
+  color: #3E3E3E;
+  font-family: asap, sans-serif;
+  font-weight: 400;
+  font-weight: bold;
+}
+
+/* line 1257, ../sass/styles.scss */
+.container_compra_curso .cat_dropdown-formulario-comp {
+  display: inline-block;
+  margin-bottom: 10px;
+  width: 316px;
+  display: block;
+}
+
+/* line 1264, ../sass/styles.scss */
+.container_compra_curso .invisible {
+  display: none;
+}
+
+/* line 1268, ../sass/styles.scss */
+.container_compra_curso .boton-formulario-comp {
+  display: block;
+  color: #FFFFFF;
+  font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+  font-size: 0.75em;
+  font-weight: bold;
+  text-align: center;
+  padding: 8px 11px 6px;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #4CAE4C;
+  background-color: #5CB85C;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/* line 1287, ../sass/styles.scss */
+.container_compra_curso .boton-formulario-comp:hover {
+  background-color: #4CAE4C;
+}
+
+/* line 1291, ../sass/styles.scss */
+.container_compra_curso #agrupacion-monto {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+/* line 1296, ../sass/styles.scss */
+.container_compra_curso .boton-aplicar-boton,
+.boton-aplicar-boton a {
+  padding-top: 7px;
+  padding-bottom: 6px;
+  padding-left: 13px;
+  padding-right: 13px;
+  background-color: #D9535F;
+  border-radius: 4px;
+}
+
+/* line 1306, ../sass/styles.scss */
+.container_compra_curso .cat_dropdownCompulearningOrg {
+  width: 316px;
+  margin-bottom: 20px;
 }

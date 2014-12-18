@@ -1,4 +1,11 @@
 $(document).ready(function(){
+	mainSlider();
+	owl_testimonial();
+});//End doc ready
+
+// Main Slider
+function mainSlider(){
+
 
 	//SLIDER 1
 	$('#carousel-example-generic').carousel({
@@ -27,19 +34,8 @@ $(document).ready(function(){
 		    window.location.hash = "#"+ parseInt($('#carousel-example-generic .carousel-inner .item.active').index()+1);
 		});
 
-console.log("test");
 
-
-
-
-
-	
-
-
-	owl_testimonial();
-});//End doc ready
-
-
+}
 // Navigation Events
 function owl_testimonial(){
     $('#testimonials_slider').owlCarousel({
